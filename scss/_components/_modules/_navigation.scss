@@ -1,0 +1,20 @@
+.m-nav {
+    @include shortFlex(flex, center, space-between);
+    padding: 20px 0;
+
+    &__logo {
+        max-width: 180px;
+    }
+
+    &__list {
+        display: flex;
+
+        li {
+            padding: 0 20px;
+        }
+
+        .-active {
+            color: $brand-primary;
+        }
+    }
+}

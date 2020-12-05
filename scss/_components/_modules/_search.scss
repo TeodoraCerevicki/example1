@@ -1,0 +1,28 @@
+.m-search {
+    position: relative;
+
+    &__input {
+        width: 205px;
+    }
+
+    &__icon {
+        @include shortFlex(inline-flex, center,center);
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    // &__overlay {
+    //     position: absolute;
+    //     bottom: 0;
+    //     width: 205px;
+    //     height: 30px;
+    //     background: $white-3;
+    // }
+
+    // &.-animation {
+    //     .m-search__overlay {
+    //         @include animation('searchFieldSlide .8s ease-out forwards');
+    //     }
+    // }
+}

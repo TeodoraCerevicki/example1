@@ -6,7 +6,7 @@
     align-items: center;
     margin-top: 40px;
     padding-bottom: 40px;
-    transition: 0.3s;
+    transition: $transiditon;
 
     &:first-child {
         margin-top: 0;
@@ -26,7 +26,7 @@
       
     &__img  img {
         width: 100%;
-        transition: 0.2s;
+        transition: $transiditon;
     }
     
     &__text {
