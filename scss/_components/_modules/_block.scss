@@ -1,0 +1,12 @@
+.m-block {
+    background-color: $white;
+    box-shadow: $outer;
+    margin-top: 50px;
+    padding: 50px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+  }
+  
+  

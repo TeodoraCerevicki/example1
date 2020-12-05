@@ -1,0 +1,32 @@
+.a-loader {
+    @include position(fixed, 0, 0, 0, 0);
+
+    z-index: 10;
+    background-color: rgba($black, .7);
+
+    &__circle {
+        @include position(absolute, 50%, unset, unset, 50%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $black;
+        transform: translate(-50%, -50%);
+
+        &::after {
+            @include animation('pulse 2s ease-out infinite');
+    
+            content: '';
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 5px solid $white;
+            background: transparent;
+            opacity: 0;
+        }
+    }
+}
+

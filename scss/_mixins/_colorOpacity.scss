@@ -1,0 +1,5 @@
+@mixin colorOpacity($color, $opacity) {
+    color: rgba($color, $opacity);
+}
+
+// @include colorOpacity($black, .5);

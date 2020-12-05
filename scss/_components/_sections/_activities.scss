@@ -1,0 +1,14 @@
+.s-activities {
+    &__item {
+        margin-top: 70px;
+    }
+    
+    &__item:first-child {
+        margin-top: 0;
+    }
+    
+    &__link::after {
+        content: '>';
+    }
+}
+  

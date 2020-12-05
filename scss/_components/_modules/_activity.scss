@@ -1,0 +1,41 @@
+.m-activity {
+    border-bottom: 1px solid $white-e;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    transition: 0.3s;
+
+    &:first-child {
+        margin-top: 0;
+    }
+      
+    &:hover {
+        text-decoration: none;
+        box-shadow: 0 15px 10px rgba($black, .2);
+        transform: scale(1.05);
+    }
+    
+    &__img {
+        width: auto;
+        height: 155px;
+        overflow: hidden;
+    }
+      
+    &__img  img {
+        width: 100%;
+        transition: 0.2s;
+    }
+    
+    &__text {
+        padding: 0 40px;
+    }
+    
+    &__title,
+    &__desc {
+        color: $black;
+    }
+}
+  

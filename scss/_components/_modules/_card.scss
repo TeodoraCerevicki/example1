@@ -1,0 +1,42 @@
+.a-cart__wrap {
+    display: flex;
+    margin: 50px -10px 0;
+    background: $white;
+}
+
+.a-card {
+    box-shadow: $outer;
+    text-align: center;
+    margin: 0 10px;
+    padding: 30px;
+    background-color: $brand-primary05;
+
+    &__icon {
+        height: 24px;
+    }
+
+    &__title {
+        margin: 18px 0;
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        color: $black;
+        text-transform: uppercase;
+    }
+
+    &:nth-child(2) {
+        background-color: rgba($blue, .5);
+    }
+
+    &:nth-child(3) {
+        background-color: rgba($orange, .5);
+    }
+        
+    &:nth-child(4) {
+        background-color: rgba($red, .5);
+    }
+}
+
+
+  
+
