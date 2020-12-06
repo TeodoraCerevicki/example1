@@ -1,14 +1,9 @@
-.a-cart__wrap {
-    display: flex;
-    margin: 50px -10px 0;
-    background: $white;
-}
-
-.a-card {
+.m-card {
+    max-width: 260px;
+    margin: 0 15px;
+    padding: 30px;
     box-shadow: $outer;
     text-align: center;
-    margin: 0 10px;
-    padding: 30px;
     background-color: $brand-primary05;
 
     &__icon {
@@ -37,6 +32,62 @@
     }
 }
 
+.m-card__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px -10px 0;
+    background: $white;
 
-  
+    &.-members {
+        justify-content: space-around;
+
+        .m-card {
+            max-width: 350px;
+            padding: 0;
+            padding-top: 30px;
+            background-color: transparent;
+
+            > * {
+                padding: 5px 30px;
+            }
+        }
+
+        .m-card__title,
+        .m-card__contact {
+            margin: 0;
+            margin-top: 20px;
+            background-color: $brand-primary;
+            color: $white;
+            text-transform: none;
+        }
+
+        .m-card__name {
+            display: block;
+            padding: 15px 30px;
+            background-color: $white-e;
+        }
+
+        .m-card__about {
+            padding: 15px 30px;
+            border-top: 1px solid $gray-a;
+        }
+
+        .m-card__contact {
+            margin-top: 0;
+            padding: 15px 30px;
+            border-top: 1px solid $gray-a;
+        }
+
+        .m-card__link {
+            padding: 15px;
+            color: $white;
+            cursor: pointer;
+            transition: $transition;
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}
 
