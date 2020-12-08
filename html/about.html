@@ -83,7 +83,7 @@
                         Zvezdana
                     </span>
 
-                    <p class="m-card__about">
+                    <p id="zvezda" class="m-card__about">
                         Zvezdana je osoba zadužena za većinu jezika i avantura. 
                         Iako uglavnom voli ljude, često više ceni životinje i prirodu, 
                         pogotovo ako umeju da se brinu sami o sebi. Ume da bude veoma surova i sarkastična. 
@@ -103,7 +103,7 @@
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </a>
 
-                        <span class="m-card__link">
+                        <span class="m-card__link js-toggleClick" data-target="#zvezda">
                             <i class="fa fa-info" aria-hidden="true"></i>
                         </span>
                     </div>
@@ -115,14 +115,14 @@
                     </div>
 
                     <span class="m-card__title">
-                        Lingvista, adrenalinski zavisnik.
+                        Urednik, muzičar.
                     </span>
 
                     <span class="m-card__name">
                         Bandi
                     </span>
 
-                    <p class="m-card__about">
+                    <p id="bandi" class="m-card__about">
                         Bandi je osoba ponajviše zadužena za muziku i montažu. On je takođe glavni urednik. 
                         Malo manje voli ljude uživo, preko interneta su mu super. Voli životinje i prirodu, isto 
                         preko interneta. Potpisao je da će podržavati Đuru 1 u svim suludim poduhvatima i srećan 
@@ -141,12 +141,22 @@
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </a>
 
-                        <span class="m-card__link">
+                        <span class="m-card__link js-toggleClick" data-target="#bandi">
                             <i class="fa fa-info" aria-hidden="true"></i>
                         </span>
                     </div>
                 </div>
             </div>
+
+            <section class="m-testimonials">
+                <div class="a-title__wrap">
+                    <h1 class="a-title">Prica se po gradu</h1>
+
+                    <p class="a-desc">
+                        Izjave koje nas opisuju u potpunosti.
+                    </p>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -175,8 +185,8 @@
         <a href='https://www.freepik.com/vectors/background'>Background vector created by davidzydd - www.freepik.com</a>
     </footer>
     <!-- build:js js/main.min.js -->
-    <script src="js/main.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
     <!-- endbuild -->
 </body>
 

@@ -39,6 +39,7 @@
     background: $white;
 
     &.-members {
+        align-items: flex-start;
         justify-content: space-around;
 
         .m-card {
