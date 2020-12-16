@@ -1,0 +1,23 @@
+.m-tab {
+    display: flex;
+    border-bottom: 1px solid $brand-primary05;
+
+    &__item {
+        margin-left: 20px;
+        padding: 10px 15px;
+        font-size: 20px;
+        color: $gray;
+        cursor: pointer;
+
+        &.-active {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background-color: $brand-primary05;
+            color: $white;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}

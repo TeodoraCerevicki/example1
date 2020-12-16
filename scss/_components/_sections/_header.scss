@@ -18,5 +18,9 @@
         background-position-y: 40%;
         filter: blur(8px);
         z-index: -1;
+
+        &.-classes {
+            background-image: url(../images/placeholders/online.jpg);
+        } 
     }
 }

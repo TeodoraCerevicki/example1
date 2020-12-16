@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Work Adrenaline</title>
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <nav class="m-nav container">
+        <a href="../index.html" class="a-link m-nav__logo">
+            <img src="../images/logos/logo.png" alt="logo">
+        </a>
+
+        <!-- Navigation list -->
+        <ul class="m-nav__list">
+            <li>
+                <a href="../index.html" class="a-link">Star(t)</a>
+            </li>
+            
+            <li>
+                <a href="about.html" class="a-link">O nama</a>
+            </li>
+            
+            <li>
+                <a href="classes.html" class="a-link -active">Časovi</a>
+            </li>
+            
+            <li>
+                <a href="#" class="a-link">Prevod</a>
+            </li>
+            
+            <li>
+                <a href="#" class="a-link">Jezički izleti</a>
+            </li>
+            
+            <li>
+                <a href="#" class="a-link">Blog</a>
+            </li>
+        </ul>
+
+        <!-- Search field  -->
+        <div class="m-search">
+            <input class="m-search__input" type="text" name="" id="">
+            <i class="fa fa-search m-search__icon" aria-hidden="true"></i>
+            <div class="m-search__overlay"></div>
+        </div>
+    </nav>
+
+    <header class="s-header -inner">
+        <div class="a-title__wrap">
+            <h1 class="a-title">Učite jezike sa nama!</h1>
+
+            <p class="a-desc">
+                Ukoliko želite da naučite da komunicirate na nekom od jezika u našoj ponudi, 
+                kontaktirajte nas! Rado ćemo podeliti svoja znanja sa vama! 
+            </p>
+
+            <div class="s-header__img -classes"></div>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="container">
+            <!-- Main content -->
+            <div class="col-lg-8">
+                <ul class="m-tab">
+                    <li class="a-link m-tab__item -active js-tabSwitch" data-target="#languages">Jezici</li>
+                    <li class="a-link m-tab__item js-tabSwitch" data-target="#online">Časovi onlajn</li>
+                    <li class="a-link m-tab__item js-tabSwitch" data-target="#trips">Jezički izleti</li>
+                </ul>
+
+                <div class="m-block s-offers">
+                    <!-- Languages -->
+                    <div id="languages" class="js-tabContent">
+                        <img class="s-offers__img" src="../images/placeholders/language.jpg" alt="placeholder image with people talking">
+                    
+                        <span>Jezici koje mozete da ucite kod nas:</span>
+                        <ul class="s-offers__list">
+                            <li class="">ruski</li>
+                            <li class="">mađarski</li>
+                            <li class="">engleski</li>
+                            <li class="">srpski za strance</li>
+                        </ul>
+
+                        <p class="a-desc">
+                            Časovi se mogu održavati na bilo kojem od navedenih jezika.
+                        </p>
+
+                        <p class="a-desc">
+                            Možete učiti ruski na srpskom, engleskom ili mađarskom; 
+                            mađarski na srpskom, ruskom ili engleskom, itd.
+                        </p>
+
+                        <p class="a-desc">
+                            Tu smo da vam razjasnimo sve poteškoće i osposobimo ili olakšamo tečnu komunikaciju.  
+                        </p>
+                    </div>
+
+                    <!-- Online classes -->
+                    <div id="online" class="js-tabContent">
+                        <img class="s-offers__img" src="../images/placeholders/online.jpg" alt="placeholder image with people talking">
+
+                        <p class="a-desc">
+                            Časove možete imati u komforu svog doma, negde u prirodi, 
+                            u kafiću, na poslu ili na bilo kom drugom mestu na kom se 
+                            nalazite u datom trenutku, ukoliko imate pristup internetu. 
+                            Sve što vam je potrebno je internet i telefon/tablet/laptop i spremni ste!
+                        </p>
+
+                        <p class="a-desc">
+                            Sav materijal dobijate od nas u onlajn formatu, tako da mu 
+                            lako možete pristupiti na bilo kom uređaju bilo kad, a 
+                            možete ga i odštampati, ukoliko vam tako više odgovara. 
+                        </p>
+
+                        <p class="a-desc">
+                            Ne morate više da brinete da li ste poneli sve što vam je potrebno za čas, 
+                            niti da se opterećujete promenom planova. Niste fizički vezani za 
+                            jedno mesto, svoj čas možete “poneti” svuda sa sobom.  
+                        </p>
+
+                        <p class="a-desc">
+                            Uštedite vreme dolaska ili odlaska na čas i sami odredite kada želite da učite. 
+                            Razdaljina, vremenske zone i putovanja više nisu problem. 
+                            Vrlo ćete se brzo navići na prednosti ovakvog načina rada.  
+                        </p>
+                    </div>
+
+                    <!-- Road trip -->
+                    <div id="trips" class="js-tabContent">
+                        <img class="s-offers__img" src="../images/placeholders/trip.jpg" alt="placeholder image with people traveling">
+
+                        <p class="a-desc"> 
+                            Uz redovne časove, trudimo se da vam, što je češće moguće, 
+                            obezbedimo dobru praksu, koja će dodatno obogatiti vaše znanje. 
+                            Svi znamo koliko je važno biti izložen jeziku među izvornim govornicima 
+                            i koristiti ga u svakodnevnim situacijama. Govorne vežbe ovog tipa smo 
+                            dodatno obogatili raznovrsnim rekreativnim sadržajima. Istražite sebe i 
+                            doživite učenje na novi način. Više informacija u glavnom meniju.
+                        </p>
+                    </div>
+
+                </div>
+
+                <a href="" class="a-btn -formLink">
+                    Prijavite se popunjavanjem formulara!
+                </a>
+
+            </div>
+
+            <!-- Side bar -->
+            <div class="col-lg-4">
+
+                <div class="s-sidebar">
+                    <h4 class="">Recent Posts</h4>
+
+                    <ul class="s-sidebar__content">
+                        <li>
+                            <a href="#" class="a-link">Uzbudljive čari Durmitora</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="a-link">Uzbudljive čari Durmitora</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="a-link">Uzbudljive čari Durmitora</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="a-link">Uzbudljive čari Durmitora</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="s-sidebar">
+                    <h4 class="">Recent Posts</h4>
+
+                    <ul class="s-sidebar__content">
+                        <li>
+                            <a href="#" class="a-link">Uzbudljive čari Durmitora</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="a-link">Uzbudljive čari Durmitora</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="a-link">Uzbudljive čari Durmitora</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="a-link">Uzbudljive čari Durmitora</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__topRow">
+            <div class="container">
+                <h5 class="footer__title">Prijatelji:</h5>
+            </div>
+        </div>
+
+        <div class="footer__bottomRow">
+            <div class="container">
+                <a href="" class="footer__icon">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+
+                <a href="" class="footer__icon">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+
+                <a href="" class="footer__icon">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <a href='https://www.freepik.com/vectors/background'>Background vector created by davidzydd - www.freepik.com</a>
+        <a href='https://www.freepik.com/vectors/school'>School vector created by pch.vector - www.freepik.com</a>
+        <a href='https://www.freepik.com/vectors/people'>People vector created by pch.vector - www.freepik.com</a>
+        <a href='https://www.freepik.com/vectors/car'>Car vector created by pch.vector - www.freepik.com</a>
+    </footer>
+    <!-- build:js js/main.min.js -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

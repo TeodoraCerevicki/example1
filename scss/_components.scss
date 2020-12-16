@@ -6,6 +6,7 @@
 @import '_components/_atoms/description';
 @import '_components/_atoms/date';
 @import '_components/_atoms/video';
+@import '_components/_atoms/button';
 
 // Modules
 @import '_components/_modules/block';
@@ -14,9 +15,14 @@
 @import '_components/_modules/navigation';
 @import '_components/_modules/search';
 @import '_components/_modules/testimonials';
+@import '_components/_modules/tabs';
 
 // Sections
 @import '_components/_sections/activities';
 @import '_components/_sections/header';
 @import '_components/_sections/footer';
+@import '_components/_sections/offers';
+@import '_components/_sections/sidebar';
+
+
 
