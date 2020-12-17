@@ -1,7 +1,6 @@
 .a-title {
     position: relative;
     display: inline-block;
-    font-size: 35px;
     color: $black;
 
     &:before,
@@ -11,7 +10,7 @@
         height: 2px;
         background-color: $brand-primary05;
         position: absolute;
-        top: 24px;
+        top: 50%;
         left: -95px;
     }
       

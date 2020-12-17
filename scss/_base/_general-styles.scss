@@ -1,9 +1,11 @@
 body {
     background-color: $white-3;
+    transition: $transition;
+    color: $gray;
 }
 
 .main-content {
-    background-image: url(../images/1350.jpg);
+    background-image: url(../images/placeholders/background.jpg);
     padding: 100px 0;
 }
 
@@ -15,4 +17,8 @@ input[type=text] {
     border: none;
     border-bottom: 2px solid $brand-primary;
     background: none;
+}
+
+.hide {
+    display: none;
 }

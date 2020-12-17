@@ -3,7 +3,16 @@
         margin-top: -50px;
     }
 
+    &__heading {
+        margin-top: 35px;
+    }
+
     &__list {
-        column-count: 3;
+        padding-left: 35px;
+
+        li {
+            list-style: disc;
+            color: $orange;
+        }
     }
 }

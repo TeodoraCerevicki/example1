@@ -36,7 +36,11 @@
 
         a {
             font-size: 16px;
-            color: $gray;
+            
+
+            &:hover {
+                padding-left: 10px;
+            }
         }
     }
 }

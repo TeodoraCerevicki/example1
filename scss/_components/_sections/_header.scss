@@ -1,6 +1,8 @@
 .s-header {
     position: relative;
+
     &.-inner {
+        min-height: 250px;
         padding: 40px 0;
 
         .a-title__wrap {
@@ -22,5 +24,13 @@
         &.-classes {
             background-image: url(../images/placeholders/online.jpg);
         } 
+
+        &.-blog {
+            background-image: url(../images/placeholders/blog.jpg);
+        }
+    }
+
+    .a-desc {
+        color: $black;
     }
 }
