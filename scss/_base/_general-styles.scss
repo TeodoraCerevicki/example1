@@ -13,7 +13,9 @@ body {
     width: 100%;
 }
 
-input[type=text] {
+input[type=text],
+select {
+    padding-bottom: 3px;
     border: none;
     border-bottom: 2px solid $brand-primary;
     background: none;
