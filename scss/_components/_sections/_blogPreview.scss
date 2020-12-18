@@ -17,7 +17,7 @@
     }
 
     .s-blogPreview__img {
-        @include bg-img(cover, top center);
+        @include bg-img(cover, center);
 
         height: 350px;
         background-image: url(../images/doggo.jpg);
