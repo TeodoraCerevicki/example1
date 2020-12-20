@@ -1,11 +1,13 @@
 .m-activity {
-    border-bottom: 1px solid $white-e;
-    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
     padding-bottom: 40px;
+    border-bottom: 1px solid $white-e;
+    background-color: $white;
+    cursor: pointer;
+    transition: $transition;
 
     &:first-child {
         margin-top: 0;

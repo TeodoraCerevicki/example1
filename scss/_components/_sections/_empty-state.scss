@@ -1,0 +1,8 @@
+.s-emptyState {
+    @include bg-img(cover, top center);
+    padding: 20px;
+    padding-top: 110px;
+    height: 500px;
+    background-image: url(../images/placeholders/empty_space.jpg);
+    background-position: bottom;
+}

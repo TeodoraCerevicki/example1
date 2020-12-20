@@ -28,6 +28,11 @@
         &.-blog {
             background-image: url(../images/placeholders/blog.jpg);
         }
+
+        &.-events {
+            background-image: url(../images/placeholders/trip.jpg);
+            background-position-y: 80%;
+        }
     }
 
     .a-desc {

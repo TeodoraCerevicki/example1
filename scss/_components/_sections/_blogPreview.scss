@@ -8,11 +8,11 @@
     .s-blogPreview__date,
     .s-blogPreview__author,
     .s-blogPreview__desc,
-    h2 {
+    h3 {
         color: $gray;
     }
 
-    h2 {
+    h3 {
         font-weight: 500;
     }
 
@@ -64,6 +64,13 @@
     .a-link {
         width: 160px;
         margin: 20px 0 0 auto;
+        border: 1px solid $orange;
         background-color: $orange;
+        transition: $transition;
+
+        &:hover {
+            background-color: $white;
+            color: $orange;
+        }
     }
 }
