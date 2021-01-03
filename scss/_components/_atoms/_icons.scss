@@ -1,0 +1,28 @@
+.a-closeIcon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-bottom: 2px solid $brand-primary;
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+        right: 13px;
+    }
+}

@@ -5,7 +5,9 @@
 // Custom
 @import '_mixins/font-size';
 @import '_mixins/position';
-@import '_mixins/shortFlex';
 @import '_mixins/colorOpacity';
 @import '_mixins/_animation';
 @import '_mixins/bg-image';
+
+// Spacing
+@import'_mixins/display';

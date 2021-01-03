@@ -1,0 +1,20 @@
+.m-popup {
+    @include position(fixed, 0, 0, 0, 0);
+    @include displayFlex(flex, center, center);
+
+    display: none;
+    padding: 20px;
+    background: rgba($white, .65);
+
+    &.-active {
+        display: flex;
+    }
+
+    .m-popup__box {
+        position: relative;
+        padding: 50px;
+        border: 1px solid $brand-primary;
+        border-radius: 10px;
+        background-color: $white;
+    }
+}

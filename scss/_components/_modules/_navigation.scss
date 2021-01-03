@@ -1,5 +1,5 @@
 .m-nav {
-    @include shortFlex(flex, center, space-between);
+    @include displayFlex(flex, center, space-between);
     padding: 20px 0;
 
     &__logo {

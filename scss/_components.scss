@@ -7,6 +7,7 @@
 @import '_components/_atoms/date';
 @import '_components/_atoms/video';
 @import '_components/_atoms/button';
+@import '_components/_atoms/icons';
 
 // Modules
 @import '_components/_modules/block';
@@ -16,6 +17,8 @@
 @import '_components/_modules/search';
 @import '_components/_modules/testimonials';
 @import '_components/_modules/tabs';
+@import '_components/_modules/popup';
+
 
 // Sections
 @import '_components/_sections/activities';
@@ -25,8 +28,3 @@
 @import '_components/_sections/sidebar';
 @import '_components/_sections/blogPreview';
 @import '_components/_sections/empty-state';
-
-
-
-
-

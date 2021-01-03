@@ -1,9 +1,0 @@
-@mixin shortFlex($display, $align, $justify, $wrap: nowrap, $direction: row) {
-    display: $display;
-    align-items: $align;
-    justify-content: $justify;
-    flex-wrap: $wrap;
-    flex-direction: $direction;
-}
-
-// @include shortFlex(flex, center, space-between, wrap);

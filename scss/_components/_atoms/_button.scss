@@ -2,19 +2,25 @@
     display: block;
     padding: 20px;
     border-radius: 5px;
-    border: 1px solid $brand-primary;
+    border: 2px solid $brand-primary;
     background: $brand-primary;
     text-align: center;
     color: $white;
+    transition: $transition;
 
     &:hover {
-        background: $white;
+        background: rgba($white, .8);
         color: $brand-primary;
     }
 
     &.-formLink {
         margin-top: 40px;
         font-size: 20px;
+    }
+
+    &.-footer {
+        margin-top: 10px;
+        padding: 10px;
     }
 
 }

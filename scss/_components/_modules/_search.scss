@@ -6,7 +6,7 @@
     }
 
     &__icon {
-        @include shortFlex(inline-flex, center,center);
+        @include displayFlex(inline-flex, center,center);
         width: 30px;
         height: 30px;
         cursor: pointer;

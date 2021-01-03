@@ -24,3 +24,21 @@ select {
 .hide {
     display: none;
 }
+
+// Display
+.d-block {
+    display: block;
+}
+
+// Text 
+a {
+    transition: .3;
+
+    &:hover {
+        color: #529149;
+    }
+}
+
+.c-pointer {
+    cursor: pointer;
+}
