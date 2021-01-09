@@ -1,6 +1,4 @@
 .m-card {
-    max-width: 260px;
-    margin: 0 15px;
     padding: 30px;
     box-shadow: $outer;
     text-align: center;
@@ -30,13 +28,17 @@
     &:nth-child(4) {
         background-color: rgba($red, .5);
     }
+
+    @media screen and (min-width: 768px) {
+        max-width: 260px;
+        margin: 0 15px;
+    }
 }
 
 .m-card__wrap {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px -10px 0;
-    background: $white;
+    margin: 50px 0;
 
     &.-members {
         align-items: flex-start;
@@ -88,6 +90,11 @@
                 color: $black;
             }
         }
+    }
+
+    @media screen and (min-width: 768px) {
+        margin: 50px -10px 0;
+        background: $white;
     }
 }
 

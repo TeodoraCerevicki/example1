@@ -2,8 +2,9 @@
     @include displayFlex(flex, center, space-between);
     position: relative;
     padding: 20px 0;
+    background: rgba($white, .6);
 
-    .m-nav__logo {
+    &__logo {
         max-width: 180px;
     }
 
@@ -16,7 +17,8 @@
             z-index: 1;
             display: none;
             padding: 20px 0;
-            background: $gray-a;
+            background: $white;
+            background: linear-gradient(0deg, rgba($white,1) 0%, rgba(253,187,45,1) 100%);
             font-weight: 700;
             text-align: center;
 
@@ -31,7 +33,7 @@
         }
     }
 
-    .m-nav__list {
+    &__list {
         display: flex;
 
         li {

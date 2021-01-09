@@ -5,4 +5,8 @@
     height: 500px;
     background-image: url(../images/placeholders/empty_space.jpg);
     background-position: bottom;
+
+    @media screen and (max-width: 767px) {
+        background-size: contain;
+    }
 }

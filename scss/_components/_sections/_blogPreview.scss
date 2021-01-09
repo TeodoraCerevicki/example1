@@ -5,9 +5,9 @@
     box-shadow: $outer;
     color: $gray;
 
-    .s-blogPreview__date,
-    .s-blogPreview__author,
-    .s-blogPreview__desc,
+    &__date,
+    &__author,
+    &__desc,
     h3 {
         color: $gray;
     }
@@ -16,14 +16,14 @@
         font-weight: 500;
     }
 
-    .s-blogPreview__img {
+    &__img {
         @include bg-img(cover, center);
 
         height: 350px;
         background-image: url(../images/doggo.jpg);
     }
 
-    .s-blogPreview__category,
+    &__category,
     .a-link  {
         display: block;
         padding: 5px 15px;
@@ -32,13 +32,13 @@
         color: $white;
     }
 
-    .s-blogPreview__info {
+    &__info {
         padding: 15px 15px;
         background-color: $white-e;
     }
 
-    .s-blogPreview__date,
-    .s-blogPreview__author {
+    &__date,
+    &__author {
         display: inline-block;
         margin-top: 10px;
 
@@ -47,18 +47,15 @@
         }
     }
 
-    .s-blogPreview__author {
+    &__author {
         margin-left: 15px;
     }
 
-    .s-blogPreview__desc {
+    &__desc {
+        @include textLineCut(4);
         padding: 15px 15px 0;
         border-top: 1px solid $gray-a;
         background-color: $white;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;  
-        overflow: hidden;
     }
 
     .a-link {

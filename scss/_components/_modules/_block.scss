@@ -2,11 +2,15 @@
     background-color: $white;
     box-shadow: $outer;
     margin-top: 50px;
-    padding: 50px;
+    padding: 15px;
 
     &:first-child {
         margin-top: 0;
     }
-  }
+
+    @media screen and (min-width: 768px) {
+        padding: 50px;
+    }
+}
   
   

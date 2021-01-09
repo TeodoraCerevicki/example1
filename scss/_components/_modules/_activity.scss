@@ -1,16 +1,14 @@
 .m-activity {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
     margin-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
     border-bottom: 1px solid $white-e;
     background-color: $white;
     cursor: pointer;
     transition: $transition;
 
-    &:first-child {
-        margin-top: 0;
+    &:last-child {
+        border-bottom: none;
     }
       
     &:hover {
@@ -30,12 +28,26 @@
     }
     
     &__text {
-        padding: 0 40px;
+        padding: 20px 10px 0;
     }
     
     &__title,
     &__desc {
         color: $black;
+    }
+
+    .a-desc {
+        @include textLineCut(3);
+    }
+
+    @media screen and (min-width: 768px) {
+        @include displayFlex(flex, center, space-between, row, nowrap);
+
+        padding-bottom: 40px;
+
+        &__text {
+            padding: 0 40px;
+        }
     }
 }
   

@@ -3,7 +3,6 @@
 @import '_mixins/screen-reader';
 
 // Custom
-@import '_mixins/font-size';
 @import '_mixins/position';
 @import '_mixins/colorOpacity';
 @import '_mixins/_animation';
@@ -11,3 +10,8 @@
 
 // Spacing
 @import'_mixins/display';
+
+
+// Text
+@import '_mixins/font-size';
+@import '_mixins/text-cut';
