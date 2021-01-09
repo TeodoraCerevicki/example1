@@ -14,7 +14,8 @@
         content: '';
         width: 20px;
         height: 20px;
-        border-bottom: 2px solid $brand-primary;
+        border-bottom: 2px solid $black;
+        transition: $transition;
     }
 
     &:before {
@@ -24,5 +25,12 @@
     &:after {
         transform: rotate(-45deg);
         right: 13px;
+    }
+
+    &:hover {
+        &:before,
+        &:after {
+            border-bottom: 2px solid $red;
+        }
     }
 }

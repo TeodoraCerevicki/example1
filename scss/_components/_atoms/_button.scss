@@ -4,6 +4,7 @@
     border-radius: 5px;
     border: 2px solid $brand-primary;
     background: $brand-primary;
+    font-weight: 700;
     text-align: center;
     color: $white;
     transition: $transition;
@@ -18,9 +19,9 @@
         font-size: 20px;
     }
 
-    &.-footer {
+    &.-smaller {
         margin-top: 10px;
-        padding: 10px;
+        padding: 10px 20px;
     }
 
 }

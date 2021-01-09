@@ -30,6 +30,7 @@ $(document).ready(function () {
     $(function() {
         var openBtn = $('.open-popup');
         var popup = $('.m-popup');
+        var popBox = $('.m-popup__box');
 
         openBtn.click(function(e) {
             e.preventDefault();
@@ -38,9 +39,18 @@ $(document).ready(function () {
             $(target).addClass('-active');
         });
 
-        !popup.click(function() {
-            popup.removeClass('-active');
-        })
+        $(document).mouseup(function(e)  {
+            e.preventDefault(); 
+
+            if (!popBox.is(e.target) && popBox.has(e.target).length === 0 || $('.js-close').is(e.target)) {
+                popup.removeClass('-active');
+            }
+
+            if (openBtn.is(e.target)) {
+                var target = $(this).attr('data-target');
+                $(target).addClass('-active');
+            }
+        });
     });
 });
 

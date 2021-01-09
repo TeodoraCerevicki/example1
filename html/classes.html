@@ -9,6 +9,7 @@
     <!-- build:css css/main.min.css -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <!-- endbuild -->
 </head>
@@ -48,7 +49,7 @@
 
         <!-- Search field  -->
         <div class="m-search">
-            <input class="m-search__input" type="text" name="" id="">
+            <input class="m-search__input" type="text">
             <i class="fa fa-search m-search__icon" aria-hidden="true"></i>
             <div class="m-search__overlay"></div>
         </div>
@@ -220,7 +221,7 @@
                     </div>
                 </div>
 
-                <a href="" class="a-btn -formLink">
+                <a data-target="#formPopup" class="a-btn -formLink open-popup c-pointer">
                     Prijavite se popunjavanjem formulara!
                 </a>
 
@@ -279,23 +280,161 @@
     <footer class="footer">
         <div class="footer__topRow">
             <div class="container">
-                <h5 class="footer__title">Prijatelji:</h5>
+
+                <div class="col-md-3">
+                    <h5 class="footer__title">Kontakt:</h5>
+
+                    <ul class="">
+                        <li>
+                            E-mail:
+                            <a href="mailto:name@email.com" class="">
+                                name@email.com
+                            </a>
+                        </li>
+
+                        <li>
+                            Telefon:
+                            <a href="tel:064222222222">
+                                064222222222
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__icon">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+            
+                            <a href="" class="footer__icon">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+            
+                            <a href="" class="footer__icon">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a class="a-btn -smaller open-popup c-pointer" data-target="#formPopup">
+                        Popunite formular!
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <h5 class="footer__title">Casovi:</h5>
+
+                    <ul class="">
+                        <li>
+                            <a href="./html/classes.html#languages">
+                            Jezici</a>
+                        </li>
+
+                        <li>
+                            <a href="./html/classes.html#online">
+                                Časovi onlajn
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./html/classes.html#trips">
+                                Jezički izleti
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5 class="footer__title">Blog:</h5>
+
+                    <ul class="">
+                        <li>
+                            <a href="./html/classes.html#languages">
+                            Jezici</a>
+                        </li>
+
+                        <li>
+                            <a href="./html/classes.html#online">
+                                Časovi onlajn
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./html/classes.html#trips">
+                                Jezički izleti
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5 class="footer__title">Prijatelji:</h5>
+                </div>
             </div>
         </div>
 
         <div class="footer__bottomRow">
             <div class="container">
-                <a href="" class="footer__icon">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
+                <div class="col-md-6">
+                    Powered by
+                    <a href="mailto:teodora.cerevicki@gmail.com" class="">#notMyCupOfTea</a>
+                </div>
+                
+                <div class="col-md-6">
+                    Art taken from
+                    <a href="https://www.freepik.com/" target="_blank" class="">freepik.com</a>
+                  
+                    <a class="open-popup c-pointer" data-target="#artPopup"><span class="material-icons">edit</span></a>
+                </div>
+            </div>
+        </div>
 
-                <a href="" class="footer__icon">
-                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                </a>
+        <div id="artPopup" class="m-popup">
 
-                <a href="" class="footer__icon">
-                    <i class="fa fa-youtube" aria-hidden="true"></i>
-                </a>
+            <div class="m-popup__box">
+                <div class="a-closeIcon js-close"></div>
+
+                <a href='https://www.freepik.com/vectors/background' class="d-block a-link">Background vector created by davidzydd - www.freepik.com</a>
+                <a href='https://www.freepik.com/vectors/school' class="d-block a-link">School vector created by pch.vector - www.freepik.com</a>
+                <a href='https://www.freepik.com/vectors/people' class="d-block a-link">People vector created by pch.vector - www.freepik.com</a>
+                <a href='https://www.freepik.com/vectors/car' class="d-block a-link">Car vector created by pch.vector - www.freepik.com</a>
+                <a href='https://www.freepik.com/vectors/website' class="d-block a-link">Website vector created by stories - www.freepik.com</a>
+                <a href='https://www.freepik.com/vectors/man' class="d-block a-link">Man vector created by katemangostar - www.freepik.com</a>
+            </div>
+        </div>
+
+        <div id="formPopup" class="m-popup">
+
+            <div class="m-popup__box">
+                <div class="a-closeIcon js-close"></div>
+
+                <form class="m-form" action="" method="post">
+                    <div>
+                        <div class="m-form__box">
+                            <label class="-required" required>Ime:</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="m-form__box">
+                            <label class="-required">Email:</label>
+                            <input type="email" required>
+                        </div>
+
+                        <div class="m-form__box">
+                            <label>Broj telefona</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="m-form__box">
+                            <label class="-required">Poruka:</label>
+                            <textarea cols="30" rows="8" required></textarea>
+                        </div>
+                    </div>
+
+                    <button class="a-btn -smaller" type="submit">
+                        Posalji
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
