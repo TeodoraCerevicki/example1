@@ -34,3 +34,37 @@
         }
     }
 }
+
+.a-burger {
+    width: 30px;
+
+    span {
+        display: block;
+        height: 9px;
+        border-bottom: 2px solid $black;
+        transition: $transition;
+    }
+
+    &.open {
+        span {
+            &:first-child {
+                transform: rotate(45deg); 
+            }
+
+            &:nth-child(2) {
+                position: relative;
+                top: -9px;
+                right: 5px;
+                transform: rotate(-45deg);
+            }
+
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}

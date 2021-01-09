@@ -52,6 +52,17 @@ $(document).ready(function () {
             }
         });
     });
+
+    $(function() {
+        var burger = $('.js-burger');
+        var navContent = $('.js-nav-content');
+
+        burger.click(function(e) {
+            e.preventDefault();
+            navContent.slideToggle('.active');
+            burger.toggleClass('open');
+        });
+    });
 });
 
 

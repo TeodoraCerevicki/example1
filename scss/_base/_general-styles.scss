@@ -32,9 +32,11 @@ input[type=email] {
 }
 
 // Display
-.d-block {
+.d-block,
+.active {
     display: block;
 }
+
 
 // Text 
 a {
