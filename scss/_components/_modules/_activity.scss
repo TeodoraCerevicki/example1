@@ -17,6 +17,12 @@
         transform: scale(1.05);
     }
     
+    &.a-link {
+        &:hover {
+            color: $brand-secondary;
+        }
+    }
+
     &__img {
         width: auto;
         height: 155px;

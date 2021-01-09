@@ -13,7 +13,7 @@
         @media screen and (min-width: 768px) {
             min-height: 250px;
             padding: 40px 0;
-            background-color: transparent;
+            background: transparent;
 
             .a-title__wrap {
                 width: 50%;
@@ -54,9 +54,5 @@
                 background-position-y: 80%;
             }
         }
-    }
-
-    .a-desc {
-        color: $black;
     }
 }

@@ -7,6 +7,10 @@
     &__logo {
         max-width: 180px;
     }
+    
+    @media screen and (min-width: 768px) {
+        background: none;
+    }
 
     .m-nav__wrap {
         @include displayFlex(flex, center, space-between);
@@ -19,7 +23,6 @@
             padding: 20px 0;
             background: $white;
             background: linear-gradient(0deg, rgba($white,1) 0%, rgba(253,187,45,1) 100%);
-            font-weight: 700;
             text-align: center;
 
             .m-nav__list {
