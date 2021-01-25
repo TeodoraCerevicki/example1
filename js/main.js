@@ -59,8 +59,21 @@ $(document).ready(function () {
 
         burger.click(function(e) {
             e.preventDefault();
-            navContent.slideToggle('.active');
+            navContent.slideToggle('.active-flex');
             burger.toggleClass('open');
+        });
+    });
+
+    $(function() {
+        var openTextBtn = $('.js-openTextBtn');
+        var openTextContent = $('.js-openTextContent');
+
+        openTextBtn.click(function(e) {
+            e.preventDefault();
+
+            openTextContent.toggleClass('-homeCutText');
+
+            (openTextContent.hasClass('-homeCutText')) ? openTextBtn.text('Zelim sve da procitam') : openTextBtn.text('Ajme di otvori!');
         });
     });
 });

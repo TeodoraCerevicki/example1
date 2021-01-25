@@ -1,4 +1,6 @@
 .footer {
+    margin-top: 40px;
+    
     &__topRow {
         background-color: $gray-a;
         border-top: $gray;
@@ -14,20 +16,26 @@
     &__bottomRow {
         background-color: $gray;
         padding: 15px 0;
-    }
-    
-    &__bottomRow .container {
-        color: $white;
+
+        .container {
+            color: $white;
+        }    
     }
     
     &__icon {
         font-size: 30px;
         color: $white;
         margin: 0 10px;
+
+        :hover{
+            color: $brand-secondary;
+        }
     }
-    
-    &__icon :hover{
-        color: $brand-primary;
+
+    a {
+        &:hover {
+            color: $brand-secondary;
+        }
     }
 }
 

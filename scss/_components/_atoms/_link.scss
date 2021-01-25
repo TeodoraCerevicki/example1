@@ -1,9 +1,18 @@
 .a-link {
-    color: $black-2;
+    color: $gray;
     display: block;
     font-size: 18px;
 
     &:hover {
         color: $brand-primary;
+    }
+
+    &.-homeCutText {
+        display: block;
+        text-align: right;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
     }
 }

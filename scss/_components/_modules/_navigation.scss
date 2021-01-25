@@ -41,11 +41,17 @@
 
         li {
             padding: 0 20px;
+            color: $gray;
         }
 
         .-active {
             border-bottom: 1px dashed $brand-primary;
-            color: $brand-primary;
+            color: $black-2;
+
+            @media screen and (min-width: 768px) {
+                border-bottom: 1px dashed $brand-primary;
+                color: $brand-primary; 
+            }
         }
     }
 }

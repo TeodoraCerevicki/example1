@@ -21,7 +21,7 @@ input[type=email],
 select {
     padding-bottom: 3px;
     border: none;
-    border-bottom: 2px solid $brand-primary;
+    border-bottom: 2px solid $brand-secondary;
     background: none;
 }
 
@@ -40,13 +40,17 @@ input[type=email] {
     display: block;
 }
 
+.active-flex {
+    display: flex;
+}
+
 
 // Text 
 a {
     transition: .3;
 
     &:hover {
-        color: #529149;
+        color: #fdbb2d;
     }
 }
 
