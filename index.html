@@ -7,8 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dobrodosli | Work Adrenaline</title>
     <!-- build:css css/main.min.css -->
-    <link rel="stylesheet" type="text/css"
-        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="js/aos-master/dist/aos.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -64,8 +66,14 @@
         </div>
     </nav>
 
-    <div class="header">
-
+    <div class="header hideOnMobile">
+        <div class="m-slider js-slider">
+            <img src="images/slider.jpg" alt="slider image">
+            <img src="images/slider.jpg" alt="slider image">
+            <img src="images/slider.jpg" alt="slider image">
+            <img src="images/slider.jpg" alt="slider image">
+            <img src="images/slider.jpg" alt="slider image">
+        </div>
     </div>
 
     <main class="main-content">
@@ -106,7 +114,10 @@
             </section>
 
             <div class="m-card__wrap">
-                <div class="m-card m-block">
+                <div class="m-card m-block" 
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="500">
                     <img class="m-card__icon" src="images/icons/handshake.svg" alt="">
 
                     <span class="m-card__title">
@@ -119,7 +130,11 @@
                     </p>
                 </div>
 
-                <div class="m-card m-block">
+                <div class="m-card m-block" 
+                    data-aos="fade-up" 
+                    data-aos-delay="300"
+                    data-aos-easing="linear"
+                    data-aos-duration="500">
                     <img class="m-card__icon" src="images/icons/handshake.svg" alt="">
 
                     <span class="m-card__title">
@@ -132,7 +147,11 @@
                     </p>
                 </div>
 
-                <div class="m-card m-block">
+                <div class="m-card m-block" 
+                    data-aos="fade-up" 
+                    data-aos-delay="600"
+                    data-aos-easing="linear"
+                    data-aos-duration="500">
                     <img class="m-card__icon" src="images/icons/handshake.svg" alt="">
 
                     <span class="m-card__title">
@@ -145,7 +164,11 @@
                     </p>
                 </div>
 
-                <div class="m-card m-block">
+                <div class="m-card m-block" 
+                    data-aos="fade-up" 
+                    data-aos-delay="900"
+                    data-aos-easing="linear"
+                    data-aos-duration="500">
                     <img class="m-card__icon" src="images/icons/handshake.svg" alt="">
 
                     <span class="m-card__title">
@@ -166,7 +189,8 @@
 
                 <div class="s-activities__item">
 
-                    <a class="m-activity a-link">
+                    <a class="m-activity a-link" 
+                        data-aos="fade-right">
                         <div class="m-activity__img">
                             <img src="images/2019-08-09-020-500x300.jpg" alt="">
                         </div>
@@ -189,7 +213,7 @@
                         </div>
                     </a>
 
-                    <a class="m-activity a-link">
+                    <a class="m-activity a-link" data-aos="fade-right">
                         <div class="m-activity__img">
                             <img src="images/2019-08-09-020-500x300.jpg" alt="">
                         </div>
@@ -212,7 +236,7 @@
                         </div>
                     </a>
 
-                    <a class="m-activity a-link">
+                    <a class="m-activity a-link" data-aos="fade-right">
                         <div class="m-activity__img">
                             <img src="images/2019-08-09-020-500x300.jpg" alt="">
                         </div>
@@ -417,6 +441,10 @@
     </footer>
     <!-- build:js js/main.min.js -->
     <script src="js/jquery.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script type="text/javascript" src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/aos-master/dist/aos.js"></script>
     <script src="js/main.js"></script>
     <!-- endbuild -->
 </body>

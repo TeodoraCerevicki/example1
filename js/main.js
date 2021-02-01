@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // Toggle content 
     $(function(){
         $('.js-toggleClick').click(function(e) {
             e.preventDefault();
@@ -8,6 +9,7 @@ $(document).ready(function () {
         });
     });
 
+    // Tab switcher
     $(function(){
         var tabSwitcher = $('.js-tabSwitch');
         var tabContent = $('.js-tabContent');
@@ -27,6 +29,7 @@ $(document).ready(function () {
         });
     });
 
+    // Pop-up box 
     $(function() {
         var openBtn = $('.open-popup');
         var popup = $('.m-popup');
@@ -53,6 +56,7 @@ $(document).ready(function () {
         });
     });
 
+    // Toggle burger
     $(function() {
         var burger = $('.js-burger');
         var navContent = $('.js-nav-content');
@@ -76,6 +80,22 @@ $(document).ready(function () {
             (openTextContent.hasClass('-homeCutText')) ? openTextBtn.text('Zelim sve da procitam') : openTextBtn.text('Ajme di otvori!');
         });
     });
+
+    // Slick slider
+    $('.js-slider').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: "unslick"
+            }
+          ]
+    });
+
+    AOS.init();
 });
 
 
