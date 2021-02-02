@@ -1,0 +1,10 @@
+.m-pageLoad {
+    @include position(absolute, 0, 0, 0, 0);
+    @include displayFlex(flex, center, center);
+    @include bgcolorOpacity($white, .9);
+
+    img {
+        @include animation('rotate 2s ease-out infinite');
+        width: 70px;
+    }
+}

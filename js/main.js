@@ -1,3 +1,7 @@
+window.onload= function(){
+    $('.m-pageLoad').fadeOut();
+}
+
 $(document).ready(function () {
     // Toggle content 
     $(function(){
