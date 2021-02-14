@@ -19,10 +19,11 @@
             @include position(absolute, 90px, 0, unset, 0);
 
             z-index: 1;
+            height: 100vh;
             display: none;
             padding: 20px 0;
             background: $white;
-            background: linear-gradient(0deg, rgba($white,1) 0%, rgba(253,187,45,1) 100%);
+            background: linear-gradient(0deg, $brand-primary 0%, $white 100%);
             text-align: center;
 
             .m-nav__list {

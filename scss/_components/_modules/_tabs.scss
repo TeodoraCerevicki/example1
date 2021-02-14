@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     margin: 0 -30px;
-    padding: 10px 0;
     border-bottom: 1px solid $brand-primary05;
     background: $white;
 
@@ -15,7 +14,8 @@
         &.-active {
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
-            color: $brand-primary;
+            background: $brand-primary;
+            color: $white;
         }
 
         &:first-child {
@@ -25,7 +25,6 @@
 
     @media screen and (min-width: 768px) {
         margin: unset;
-        padding: unset;
 
         &__item {
             padding: 10px 15px;

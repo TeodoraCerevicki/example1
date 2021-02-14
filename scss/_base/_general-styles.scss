@@ -4,11 +4,17 @@ body {
     color: $gray;
 }
 
+.block-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+
 .main-content {
+    padding-bottom: 50px;
+    background-image: url(../images/placeholders/background.jpg);
     
     @media screen and (min-width: 768px) {
         padding: 100px 0;
-        background-image: url(../images/placeholders/background.jpg);
     }
 }
 

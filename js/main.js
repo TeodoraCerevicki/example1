@@ -1,5 +1,8 @@
+$('html, body').css({ 'overflow': 'hidden', 'height': '100%' })
+
 window.onload= function(){
     $('.m-pageLoad').fadeOut();
+    $('html, body').removeAttr('style');
 }
 
 $(document).ready(function () {
@@ -69,6 +72,8 @@ $(document).ready(function () {
             e.preventDefault();
             navContent.slideToggle('.active-flex');
             burger.toggleClass('open');
+
+            burger.hasClass('open')?$('html, body').css({ 'overflow': 'hidden', 'height': '100%' }) : $('html, body').removeAttr('style');
         });
     });
 
@@ -90,13 +95,15 @@ $(document).ready(function () {
         infinite: true,
         autoplay: true,
         autoplaySpeed: 3000,
-        arrows: false,
-        responsive: [
-            {
-              breakpoint: 768,
-              settings: "unslick"
-            }
-          ]
+        arrows: false
+    });
+
+    $('.js-sayings').slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false
     });
 
     AOS.init();

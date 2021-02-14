@@ -15,4 +15,14 @@
             display: none;
         }
     }
+
+    &.-openLink {
+        position: relative;
+
+        .material-icons {
+            @include position(absolute, unset, -10px, -15px, unset);
+
+            font-size: 32px;
+        }
+    }
 }
