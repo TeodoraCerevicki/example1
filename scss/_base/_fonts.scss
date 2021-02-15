@@ -1,7 +1,9 @@
 @font-face {
     font-family: 'OpenSans-Regular';
-    src: url('#{$fonts-directory}/'),
-    url('#{$fonts-directory}/open-sans/OpenSans-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
+    src: url('#{$fonts-directory}/open-sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'handwritten';
+    src: url('#{$fonts-directory}/Kalam/Kalam-Regular.ttf');
 }
