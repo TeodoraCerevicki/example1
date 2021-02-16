@@ -39,10 +39,12 @@
     display: flex;
     flex-wrap: wrap;
     margin: 50px 0;
+    background: $white;
 
     &.-members {
         align-items: flex-start;
         justify-content: space-around;
+        background: none;
 
         .m-card {
             max-width: 350px;
@@ -94,7 +96,6 @@
 
     @media screen and (min-width: 768px) {
         margin: 50px -10px 0;
-        background: $white;
     }
 }
 

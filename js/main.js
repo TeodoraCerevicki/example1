@@ -54,11 +54,13 @@ $(document).ready(function () {
 
             if (!popBox.is(e.target) && popBox.has(e.target).length === 0 || $('.js-close').is(e.target)) {
                 popup.removeClass('-active');
+                $('html, body').removeClass('block-scroll')
             }
 
             if (openBtn.is(e.target)) {
                 var target = $(this).attr('data-target');
                 $(target).addClass('-active');
+                $('html, body').addClass('block-scroll')
             }
         });
     });
@@ -73,7 +75,7 @@ $(document).ready(function () {
             navContent.slideToggle('.active-flex');
             burger.toggleClass('open');
 
-            burger.hasClass('open')?$('html, body').css({ 'overflow': 'hidden', 'height': '100%' }) : $('html, body').removeAttr('style');
+            burger.hasClass('open')?$('html, body').addClass('block-scroll') : $('html, body').removeClass('block-scroll');
         });
     });
 

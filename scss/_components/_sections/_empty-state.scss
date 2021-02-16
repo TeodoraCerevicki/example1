@@ -1,12 +1,23 @@
 .s-emptyState {
+    @include displayFlex(flex, center, center, column);
     @include bg-img(cover, top center);
     padding: 20px;
-    padding-top: 110px;
     height: 500px;
+    height: 350px;
     background-image: url(../images/placeholders/empty_space.jpg);
     background-position: bottom;
 
-    @media screen and (max-width: 767px) {
-        background-size: contain;
+    a {
+        color: $brand-primary;
+        transition: $transition;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 500px;
+        padding: 50px;
     }
 }
