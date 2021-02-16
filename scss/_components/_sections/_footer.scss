@@ -36,5 +36,11 @@
             color: $brand-secondary;
         }
     }
+
+    &__slider {
+        overflow: hidden;
+        width: 70%;
+        padding-top: 15px;
+    }
 }
 
