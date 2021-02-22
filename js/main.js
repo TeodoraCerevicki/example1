@@ -108,6 +108,21 @@ $(document).ready(function () {
         arrows: false
     });
 
+    // Icon appears 
+    $(document).scroll(function() {
+        var y = window.scrollY;
+        var icon = $('.a-toTopArrow');
+
+        (y > 795 ) ? icon.fadeIn() : icon.fadeOut();
+    });
+
+    // Scroll to the top
+    $('.a-toTopArrow').click(function() {
+        $('body,html').animate({
+            scrollTop : 0                   
+        }, 500);
+    });
+
     AOS.init();
 });
 
