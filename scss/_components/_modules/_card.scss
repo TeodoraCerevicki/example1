@@ -2,7 +2,7 @@
     padding: 30px;
     box-shadow: $outer;
     text-align: center;
-    background-color: $brand-primary05;
+    background-color: rgba($brand-primary, .92);
 
     &__icon {
         height: 24px;
@@ -18,11 +18,11 @@
     }
 
     &:nth-child(2) {
-        background-color: rgba($blue, .5);
+        background-color: rgba($blue, .9);
     }
 
     &:nth-child(3) {
-        background-color: rgba($orange, .5);
+        background-color: rgba($brand-secondary, .7);
     }
         
     &:nth-child(4) {
@@ -39,7 +39,6 @@
     display: flex;
     flex-wrap: wrap;
     margin: 50px 0;
-    background: $white;
 
     &.-members {
         align-items: flex-start;
