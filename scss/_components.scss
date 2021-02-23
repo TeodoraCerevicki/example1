@@ -10,7 +10,6 @@
 @import '_components/_atoms/icons';
 @import '_components/_atoms/arrows';
 
-
 // Modules
 @import '_components/_modules/block';
 @import '_components/_modules/card';
@@ -23,6 +22,7 @@
 @import '_components/_modules/form';
 @import '_components/_modules/slider';
 @import '_components/_modules/pageLoad';
+@import '_components/_modules/breadcrumb';
 
 // Sections
 @import '_components/_sections/activities';
@@ -32,3 +32,6 @@
 @import '_components/_sections/sidebar';
 @import '_components/_sections/blogPreview';
 @import '_components/_sections/empty-state';
+
+// Pages
+@import '_components/_pages/post';

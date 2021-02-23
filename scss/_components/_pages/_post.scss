@@ -1,0 +1,26 @@
+.p-blog {
+    &__header {
+        box-shadow: $outer;
+    }
+
+    &__headerInfo {
+        @include displayFlex(flex, center, space-between);
+        padding: 20px;
+        border-top: 5px solid $brand-primary;
+        background: $white;
+        box-shadow: $outer;
+    }
+
+    &__headerSocial {
+        i {
+            margin-left: 15px;
+            font-size: 30px;
+            transition: $transition;
+            cursor: pointer;
+
+            &:hover {
+                color: $brand-secondary;
+            }
+        }
+    }
+}
