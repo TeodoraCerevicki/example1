@@ -3,13 +3,14 @@
 
     input {
         width: 205px;
-        border-color: $gray;
+        border-color: $white;
     }
 
     &__icon {
         @include displayFlex(inline-flex, center,center);
         width: 30px;
         height: 30px;
+        color: $white;
         cursor: pointer;
     }
 

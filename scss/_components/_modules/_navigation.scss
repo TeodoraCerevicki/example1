@@ -1,15 +1,12 @@
 .m-nav {
     @include displayFlex(flex, center, space-between);
-    position: relative;
-    padding: 20px 0;
-    background: rgba($white, .6);
+    @include position(fixed, 0, 0, unset, 0);
+    @include bgcolorOpacity($black, .7);
+    z-index: 1;
+    padding: 10px 20px;
 
     &__logo {
         max-width: 180px;
-    }
-    
-    @media screen and (min-width: 768px) {
-        background: none;
     }
 
     .m-nav__wrap {
@@ -42,12 +39,20 @@
 
         li {
             padding: 0 20px;
-            color: $gray;
+            color: $white;
+        }
+
+        .a-link {
+            color: $white;
+            transition: $transition;
+
+            &:hover {
+                color: $brand-primary;
+            }
         }
 
         .-active {
             border-bottom: 1px dashed $brand-primary;
-            color: $black-2;
 
             @media screen and (min-width: 768px) {
                 border-bottom: 1px dashed $brand-primary;
