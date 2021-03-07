@@ -1,6 +1,7 @@
 .m-activity {
     position: relative;
-    margin-top: 40px;
+    width: 80%;
+    margin: 40px auto 0;
     padding-bottom: 25px;
     border-bottom: 1px solid $white-e;
     background-color: $white;
@@ -19,7 +20,7 @@
     
     &.a-link {
         &:hover {
-            color: $brand-secondary;
+            color: $brand-primary;
         }
     }
 

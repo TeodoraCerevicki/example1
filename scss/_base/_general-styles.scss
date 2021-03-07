@@ -1,21 +1,9 @@
 body {
-    background-color: $white-3;
-    transition: $transition;
     color: $gray;
 }
 
 .block-scroll {
     overflow: hidden;
-}
-
-.main-content {
-    padding-bottom: 50px;
-    background-image: url(../images/placeholders/background.jpg);
-    background-repeat: no-repeat;
-    
-    @media screen and (min-width: 768px) {
-        padding: 100px 0;
-    }
 }
 
 .header img {

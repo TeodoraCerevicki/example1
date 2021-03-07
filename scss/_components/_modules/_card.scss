@@ -38,7 +38,6 @@
 .m-card__wrap {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 0;
 
     &.-members {
         align-items: flex-start;
@@ -91,10 +90,6 @@
                 color: $black;
             }
         }
-    }
-
-    @media screen and (min-width: 768px) {
-        margin: 50px -10px 0;
     }
 }
 

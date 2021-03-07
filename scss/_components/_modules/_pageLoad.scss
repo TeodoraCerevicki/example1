@@ -2,6 +2,7 @@
     @include position(absolute, 0, 0, 0, 0);
     @include displayFlex(flex, center, center);
     @include bgcolorOpacity($white, .9);
+    z-index: 1000;
 
     img {
         @include animation('rotate 2s ease-out infinite');

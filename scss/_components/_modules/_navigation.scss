@@ -3,7 +3,7 @@
     @include position(fixed, 0, 0, unset, 0);
     @include bgcolorOpacity($black, .7);
     z-index: 1;
-    padding: 10px 20px;
+    padding: 0 20px;
 
     &__logo {
         max-width: 180px;

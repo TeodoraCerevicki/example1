@@ -1,0 +1,18 @@
+.s-intro {
+    & > div {
+        height: 100vh;
+        overflow: auto;
+    }
+
+    &__img {
+        @include bg-img(cover, top center);
+        background-image: url(../images/placeholders/pen.jpg);
+    }
+}
+
+.s-introCards {
+    @include displayFlex(flex, center, center);
+    @include bg-img(cover, top center);
+    height: 100vh;
+    background-image: url(../images/placeholders/book.jpg);
+}

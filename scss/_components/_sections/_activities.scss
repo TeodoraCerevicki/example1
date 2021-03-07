@@ -1,4 +1,11 @@
 .s-activities {
+    position: relative;
+
+    .a-title__wrap {
+        @include position(absolute, 10px, unset, unset, 50%);
+        transform: translateX(-50%);
+    }
+
     &__item {
         margin-top: 70px;
     }
@@ -9,6 +16,12 @@
     
     &__link::after {
         content: '>';
+    }
+
+    &__bgImg {
+        @include bg-img(cover, top center);
+        height: 100vh;
+        background-image: url(../images/placeholders/balloons.jpg);
     }
 }
   
