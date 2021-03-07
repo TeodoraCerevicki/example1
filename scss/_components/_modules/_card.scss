@@ -91,5 +91,16 @@
             }
         }
     }
+
+    &.-blog {
+        .m-card {
+            max-width: 350px;
+            background-color: $white;
+
+            > * {
+                padding: 5px 30px;
+            }
+        }
+    }
 }
 

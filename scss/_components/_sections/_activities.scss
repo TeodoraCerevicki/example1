@@ -2,12 +2,12 @@
     position: relative;
 
     .a-title__wrap {
-        @include position(absolute, 10px, unset, unset, 50%);
+        @include position(absolute, 40px, unset, unset, 50%);
         transform: translateX(-50%);
     }
 
     &__item {
-        margin-top: 70px;
+        margin-top: 90px;
     }
     
     &__item:first-child {

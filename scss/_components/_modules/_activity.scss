@@ -6,7 +6,6 @@
     border-bottom: 1px solid $white-e;
     background-color: $white;
     cursor: pointer;
-    transition: $transition;
 
     &:last-child {
         border-bottom: none;
@@ -14,11 +13,10 @@
       
     &:hover {
         text-decoration: none;
-        box-shadow: 0 15px 10px rgba($black, .2);
-        transform: scale(1.05);
     }
     
     &.a-link {
+        transition: $transition;
         &:hover {
             color: $brand-primary;
         }
