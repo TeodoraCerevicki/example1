@@ -93,12 +93,34 @@
     }
 
     &.-blog {
-        .m-card {
-            max-width: 350px;
-            background-color: $white;
+        margin-top: 40px;
 
-            > * {
-                padding: 5px 30px;
+        .m-card {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            display: flex;
+            align-items: flex-end;
+            max-width: 350px;
+            height: 500px;
+            padding: 0;
+            background-color: transparent;
+
+            img {
+                padding: 0;
+                position: absolute;
+                bottom: 0;
+                z-index: -1;
+            }
+
+            &__info {
+                background: $white;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .a-desc {
+                @include textLineCut(3);
             }
         }
     }
