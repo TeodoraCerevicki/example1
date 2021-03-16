@@ -123,14 +123,6 @@ $(document).ready(function () {
         }, 500);
     });
 
-    // Masonry
-    $('.grid').masonry({
-        itemSelector: '.grid-item',
-        stamp: '.stamp',
-        columnWidth: 200,
-        transitionDuration: '0.2s'
-    });
-
     AOS.init();
 });
 

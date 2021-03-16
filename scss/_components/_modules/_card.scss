@@ -93,7 +93,7 @@
     }
 
     &.-blog {
-        margin-top: 40px;
+        justify-content: center;
 
         .m-card {
             position: relative;
@@ -103,8 +103,10 @@
             align-items: flex-end;
             max-width: 350px;
             height: 500px;
+            margin-top: 30px;
             padding: 0;
             background-color: transparent;
+            transition: $transition;
 
             img {
                 padding: 0;
@@ -121,6 +123,11 @@
 
             .a-desc {
                 @include textLineCut(3);
+            }
+
+            &:hover {
+                transform: scale(1.05);
+                color: $black;
             }
         }
     }

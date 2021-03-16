@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Casovi | Work Adrenaline</title>
-    <!-- build:css css/main.min.css -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css">
-    <!-- endbuild -->
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Lorem | Ipsum</title>
+        <!-- build:css css/main.min.css -->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../js/slick-1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="../js/slick-1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet" type="text/css" href="../js/aos-master/dist/aos.css"/>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../css/main.css">
+        <!-- endbuild -->
+    </head>
 
 <body>
-    <nav class="m-nav container">
+    <nav class="m-nav">
         <a href="../index.html" class="a-link m-nav__logo">
-            <img src="../images/icons/favicon.svg" alt="logo">
+            <img src="../images/logo-white.svg" alt="logo">
         </a>
 
         <div class="a-burger js-burger">
@@ -30,23 +33,23 @@
             <!-- Navigation list -->
             <ul class="m-nav__list">
                 <li>
-                    <a href="../index.html" class="a-link">Home</a>
+                    <a href="../index.html" class="a-link">Star(t)</a>
                 </li>
 
                 <li>
-                    <a href="about.html" class="a-link">About</a>
+                    <a href="about.html" class="a-link">O nama</a>
                 </li>
 
                 <li>
-                    <a href="classes.html" class="a-link -active">Page</a>
+                    <a href="classes.html" class="a-link -active">Casovi</a>
                 </li>
 
                 <li>
-                    <a href="translation.html" class="a-link">Page</a>
+                    <a href="translation.html" class="a-link">Prevod</a>
                 </li>
 
                 <li>
-                    <a href="events.html" class="a-link">Events</a>
+                    <a href="events.html" class="a-link">Izleti</a>
                 </li>
 
                 <li>
@@ -63,8 +66,9 @@
         </div>
     </nav>
 
+
     <header class="s-header -inner">
-        <div class="a-title__wrap">
+        <div class="tac">
             <h1 class="a-title">Učite jezike sa nama!</h1>
 
             <p class="a-desc">
@@ -432,8 +436,27 @@
             </div>
         </div>
     </footer>
+
+    <div class="m-pageLoad">
+        <img src="../images/icons/favicon.svg" alt="loading star icon">
+    </div>
+    
+    <!-- Highlight marker svg  -->
+    <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+        <defs>
+            <filter id="marker-shape">
+            <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+            </filter>
+        </defs>
+    </svg>
     <!-- build:js js/main.min.js -->
     <script src="../js/jquery.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="../js/aos-master/dist/aos.js"></script>
     <script src="../js/main.js"></script>
     <!-- endbuild -->
 </body>

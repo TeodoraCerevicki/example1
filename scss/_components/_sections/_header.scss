@@ -2,57 +2,43 @@
     position: relative;
 
     &.-inner {
-        padding: 20px 7px;
-        background: $white;
-        background: linear-gradient(0deg, rgba($white,1) 0%, rgba(253,187,45,1) 100%);
-
-        .a-title {
-            color: $white;
-        }
+        @include displayFlex(flex, center, center);
+        padding: 70px 7px 20px;
 
         @media screen and (min-width: 768px) {
             min-height: 250px;
             padding: 40px 0;
-            background: transparent;
-
-            .a-title__wrap {
-                width: 50%;
-                margin: 0 auto;
-            }
 
             .a-title {
                 color: $black-2;
+                &::after {
+                    background-color: transparent;
+                }
             }
         }
     }
 
     &__img {
-        display: none;
+        @include position(absolute, 0, 0, 0, 0);
 
-        @media screen and (min-width: 768px) {
-            @include position(absolute, 0, 0, 0, 0);
+        display: block;
+        opacity: 0.8;
+        background-image: url(../images/san_diago.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
 
-            display: block;
-            opacity: 0.8;
-            background-image: url(../images/san_diago.jpg);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position-y: 40%;
-            filter: blur(8px);
-            z-index: -1;
+        &.-classes {
+            background-image: url(../images/placeholders/online.jpg);
+        } 
 
-            &.-classes {
-                background-image: url(../images/placeholders/online.jpg);
-            } 
+        &.-blog {
+            background-image: url(../images/placeholders/laptop.jpg);
+        }
 
-            &.-blog {
-                background-image: url(../images/placeholders/blog.jpg);
-            }
-
-            &.-events {
-                background-image: url(../images/placeholders/trip.jpg);
-                background-position-y: 80%;
-            }
+        &.-events {
+            background-image: url(../images/placeholders/trip.jpg);
+            background-position-y: 80%;
         }
     }
 }

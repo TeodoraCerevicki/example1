@@ -2,6 +2,7 @@
     @include position(fixed, 0, 0, 0, 0);
     @include displayFlex(flex, center, center);
 
+    z-index: 99;
     display: none;
     padding: 20px;
     background: rgba($gray-a, .65);

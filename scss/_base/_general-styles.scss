@@ -6,6 +6,12 @@ body {
     overflow: hidden;
 }
 
+.main-content {
+    &.-inner {
+        padding: 50px 0;
+    }
+}
+
 .header img {
     width: 100%;
 }
@@ -15,7 +21,7 @@ input[type=email],
 select {
     padding-bottom: 3px;
     border: none;
-    border-bottom: 2px solid $brand-secondary;
+    border-bottom: 2px solid $gray;
     background: none;
 }
 
