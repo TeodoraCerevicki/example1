@@ -12,7 +12,9 @@ $(document).ready(function () {
             e.preventDefault();
     
             var target = $(this).attr('data-target');
+            var infoBox = $(this).closest('.m-card__info')
             $(target).slideToggle();
+            $(infoBox).toggleClass('-open')
         });
     });
 

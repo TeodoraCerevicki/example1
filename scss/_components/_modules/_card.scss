@@ -1,4 +1,5 @@
 .m-card {
+    position: relative;
     padding: 30px;
     box-shadow: $outer;
     text-align: center;
@@ -30,7 +31,6 @@
     }
 
     @media screen and (min-width: 768px) {
-        max-width: 260px;
         margin: 0 15px;
     }
 }
@@ -45,20 +45,40 @@
         background: none;
 
         .m-card {
-            max-width: 350px;
+            width: 350px;
+            height: 450px;
             padding: 0;
             padding-top: 30px;
-            background-color: $white;
+            border: 4px solid $gray;
+            background-color: transparent;
 
             > * {
                 padding: 5px 30px;
             }
         }
 
+        .m-card__img {
+            @include position(absolute, 0, 0, 0, 0);
+            z-index: -1;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .m-card__info {
+            @include position(absolute, unset, 30px, -4px, 30px);
+            padding: 0;
+            border: 4px solid $gray;
+            border-bottom: 0;
+
+            &.-open {
+                left: -3px;
+                right: -3px;
+            }
+        } 
+
         .m-card__title,
         .m-card__contact {
             margin: 0;
-            margin-top: 20px;
             background-color: $brand-primary;
             color: $white;
             text-transform: none;
@@ -66,18 +86,26 @@
 
         .m-card__name {
             display: block;
-            padding: 15px 30px;
+            padding: 10px 0;
             background-color: $white-e;
+            font-family: 'handwritten';
+            font-weight: 600;
+            font-size: 20px;
         }
 
         .m-card__about {
+            display: none;
+            margin: 0;
+            max-height: 332px;
+            overflow: auto;
             padding: 15px 30px;
             border-top: 1px solid $gray-a;
+            background-color: $white;
         }
 
         .m-card__contact {
             margin-top: 0;
-            padding: 15px 30px;
+            padding: 5px 0;
             border-top: 1px solid $gray-a;
         }
 

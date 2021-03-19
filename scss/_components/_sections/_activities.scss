@@ -6,6 +6,11 @@
         transform: translateX(-50%);
     }
 
+    .a-title {
+        position: absolute;
+        top: 20px;
+    }
+
     &__item {
         margin-top: 90px;
     }

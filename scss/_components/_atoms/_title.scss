@@ -4,6 +4,12 @@
     font-family: 'handwritten';
     color: $black-2;
 
+    &__inner {
+      width: 60%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
     @media screen and (min-width: 768px) {
       &:before,
       &:after {

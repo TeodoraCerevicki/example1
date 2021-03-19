@@ -1,0 +1,5 @@
+.p-about {
+    @include bg-img(cover, center);
+
+    background-image: url(../images/placeholders/room.jpg);
+}
