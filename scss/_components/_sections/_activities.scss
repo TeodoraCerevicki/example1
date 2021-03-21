@@ -6,13 +6,11 @@
         transform: translateX(-50%);
     }
 
-    .a-title {
-        position: absolute;
-        top: 20px;
-    }
-
     &__item {
-        margin-top: 90px;
+        @media screen and (min-width: 768px) {
+            margin-top: 90px;
+        }
+        
     }
     
     &__item:first-child {
@@ -25,6 +23,7 @@
 
     &__bgImg {
         @include bg-img(cover, top center);
+        z-index: -1;
         height: 100vh;
         background-image: url(../images/placeholders/balloons.jpg);
     }

@@ -39,6 +39,20 @@
     display: flex;
     flex-wrap: wrap;
 
+    &.-home {
+
+        .m-card {
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+            
+            @media screen and (min-width: 768px) {
+                max-width: 260px;
+                margin: 0 15px;
+            }
+        }
+    }
+
     &.-members {
         align-items: flex-start;
         justify-content: space-around;
@@ -129,12 +143,17 @@
             z-index: 1;
             display: flex;
             align-items: flex-end;
+            width: 90%;
             max-width: 350px;
-            height: 500px;
+            height: 400px;
             margin-top: 30px;
             padding: 0;
             background-color: transparent;
             transition: $transition;
+
+            @media screen and (min-width: 768px) {
+                height: 500px;
+            }
 
             img {
                 padding: 0;

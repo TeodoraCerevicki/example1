@@ -1,0 +1,19 @@
+.mobile-layout {
+    @media screen and (max-width: 1199px) {
+        position: relative;
+
+        &__content {
+            position: absolute;
+            top: 0;
+            height: 100vh;
+            overflow: auto;
+            padding: 55px 0 20px;
+        }
+
+        &.s-intro {
+            .mobile-layout__content {
+                background-color: rgba($gray-a, .35);
+            }
+        }
+    }
+}

@@ -90,7 +90,7 @@ $(document).ready(function () {
 
             openTextContent.toggleClass('-homeCutText');
 
-            (openTextContent.hasClass('-homeCutText')) ? openTextBtn.text('Zelim sve da procitam') : openTextBtn.text('Ajme di otvori!');
+            (openTextContent.hasClass('-homeCutText')) ? openTextBtn.text('Read more') : openTextBtn.text('Close');
         });
     });
 
@@ -125,7 +125,7 @@ $(document).ready(function () {
         }, 500);
     });
 
-    AOS.init();
+    AOS.init({disable: 'mobile'});
 });
 
 

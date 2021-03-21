@@ -10,7 +10,7 @@
 @import '_components/_atoms/icons';
 @import '_components/_atoms/arrows';
 @import '_components/_atoms/highlight';
-
+@import '_components/_atoms/scroll-bar';
 
 // Modules
 @import '_components/_modules/block';
@@ -25,6 +25,7 @@
 @import '_components/_modules/slider';
 @import '_components/_modules/pageLoad';
 @import '_components/_modules/breadcrumb';
+@import '_components/_modules/mobile-layout';
 
 // Sections
 @import '_components/_sections/home';
