@@ -47,10 +47,12 @@ input[type=email] {
 
 // Text 
 a {
+    color: $gray;
     transition: .3;
 
     &:hover {
-        color: #fdbb2d;
+        color: inherit;
+        text-decoration: underline;
     }
 }
 

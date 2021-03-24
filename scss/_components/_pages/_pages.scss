@@ -10,12 +10,51 @@
         background-image: url(../images/placeholders/laptop.jpg);
     }
 
+    &.-about {
+        @include bg-img(cover, center);
+        background-image: url(../images/placeholders/room.jpg);
+    }
+
     &.-blog {
         background-color: $brand-secondary;
-        background-image: none;
 
         .page__content {
             background-color: unset;
         }
+    }
+}
+
+.p-post {
+    position: relative;
+    background-color: $gray-e;
+
+    .page__content {
+        padding: 0;
+    }
+
+    &__postImg {
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__header {
+        @include displayFlex(flex, center, space-between);
+        padding: 10px 40px;
+        background-color: $brand-secondary;
+    }
+
+    &__headerSocial {
+        a:hover {
+            text-decoration: none;
+        }
+
+        i {
+            margin-left: 10px;
+            font-size: 25px;
+        }
+    }
+
+    .m-block {
+        margin-top: 0;
     }
 }

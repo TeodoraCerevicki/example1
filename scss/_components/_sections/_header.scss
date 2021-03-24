@@ -22,4 +22,10 @@
         @include bg-img(cover, center);
         background-image: url(../images/placeholders/laptop.jpg);
     }
+
+    &.-post {
+        min-height: unset;
+        margin-top: 25%;
+        background-color: rgba($white, .8);
+    }
 }

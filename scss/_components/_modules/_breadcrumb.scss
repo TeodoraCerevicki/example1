@@ -1,6 +1,28 @@
 .m-breadcrumb {
-    
-    &__link {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
 
+    &__link {
+        display: block;
+        padding-right: 15px;
+
+        &:after {
+            content: '>';
+            padding-left: 10px;
+        }
+    }
+
+    &__item {
+        &:last-child {
+            .m-breadcrumb__link {
+                padding-right: 0;
+                
+                &:after {
+                    content: '';
+                    padding-left: 0;
+                }
+            }
+        }
     }
 }
