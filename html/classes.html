@@ -17,7 +17,7 @@
         <!-- endbuild -->
     </head>
 
-<body>
+<body class="page -inner">
     <nav class="m-nav">
         <a href="../index.html" class="a-link m-nav__logo">
             <img src="../images/logo-white.svg" alt="logo">
@@ -66,34 +66,36 @@
         </div>
     </nav>
 
-
     <header class="s-header -inner">
-        <div class="tac">
-            <h1 class="a-title">Učite jezike sa nama!</h1>
+        <div class="a-title__inner">
+            <h1 class="a-title a-highlight">
+                <span>Učite jezike sa nama!</span>
+            </h1>
 
-            <p class="a-desc">
-                Ukoliko želite da naučite da komunicirate na nekom od jezika u našoj ponudi, 
+            <p class="a-highlight a-desc">
+                <span>
+                    Ukoliko želite da naučite da komunicirate na nekom od jezika u našoj ponudi, 
                 kontaktirajte nas! Rado ćemo podeliti svoja znanja sa vama! 
+                </span>
+                
             </p>
 
-            <div class="s-header__img -classes"></div>
+            <div class="s-header__img -blog"></div>
         </div>
     </header>
     
     <main class="main-content">
-        <div class="container">
+        <div class="container page__content">
             <!-- Main content -->
             <div class="col-lg-8">
                 <ul class="m-tab">
-                    <li class="a-link m-tab__item -active js-tabSwitch" data-target="#languages">Jezici</li>
-                    <li class="a-link m-tab__item js-tabSwitch" data-target="#online">Page onlajn</li>
-                    <li class="a-link m-tab__item js-tabSwitch" data-target="#trips">Jezički izleti</li>
+                    <li class="m-tab__item -active js-tabSwitch" data-target="#languages">Jezici</li>
+                    <li class="m-tab__item js-tabSwitch" data-target="#online">Časovi</li>
                 </ul>
 
                 <div class="m-block s-offers">
                     <!-- Languages -->
                     <div id="languages" class="js-tabContent">
-                        <img class="s-offers__img" src="../images/placeholders/language.jpg" alt="placeholder image with people talking">
                     
                         <span>Jezici koje mozete da ucite kod nas:</span>
                         <ul class="s-offers__list">
@@ -119,8 +121,6 @@
 
                     <!-- Online classes -->
                     <div id="online" class="js-tabContent">
-                        <img class="s-offers__img" src="../images/placeholders/online.jpg" alt="placeholder image with people talking">
-
                         <p class="a-desc">
                             Časove možete imati u komforu svog doma, negde u prirodi, 
                             u kafiću, na poslu ili na bilo kom drugom mestu na kom se 
@@ -145,91 +145,6 @@
                             Razdaljina, vremenske zone i putovanja više nisu problem. 
                             Vrlo ćete se brzo navići na prednosti ovakvog načina rada.  
                         </p>
-                    </div>
-
-                    <!-- Road trip -->
-                    <div id="trips" class="js-tabContent">
-                        <img class="s-offers__img" src="../images/placeholders/trip.jpg" alt="placeholder image with people traveling">
-
-                        <p class="a-desc"> 
-                            Uz redovne časove, trudimo se da vam, što je češće moguće, 
-                            obezbedimo dobru praksu, koja će dodatno obogatiti vaše znanje. 
-                            Svi znamo koliko je važno biti izložen jeziku među izvornim govornicima 
-                            i koristiti ga u svakodnevnim situacijama. Govorne vežbe ovog tipa smo 
-                            dodatno obogatili raznovrsnim rekreativnim sadržajima. Istražite sebe i 
-                            doživite učenje na novi način. Više informacija u glavnom meniju.
-                        </p>
-
-                        <section class="s-activities">
-                 
-            
-                            <div class="s-activities__item">
-            
-                                <a class="m-activity a-link">
-                                    <div class="m-activity__img">
-                                        <img src="../images/san_diago.jpg" alt="">
-                                    </div>
-            
-                                    <div class="m-activity__text">
-                                        <h4 class="m-activity__title">
-                                            Serbian And Adrenaline!
-                                        </h4>
-            
-                                        <p class="a-desc">
-                                            We are heading to Niš - a city with impressive history and nature to match!
-                                        </p>
-                                    </div>
-            
-                                    <div class="a-date -offset">
-                                        <span class="a-date__num">06</span>
-                                        <span class="a-date__month">may</span>
-                                    </div>
-                                </a>
-            
-                                <a class="m-activity a-link">
-                                    <div class="m-activity__img">
-                                        <img src="../images/san_diago.jpg" alt="">
-                                    </div>
-            
-                                    <div class="m-activity__text">
-                                        <h4 class="m-activity__title">
-                                            Srpski Uz Adrenalin
-                                        </h4>
-            
-                                        <p class="a-desc">
-                                            Мы уезжаем в город Ниш - город юго-восточной Сербии с впечатляющей историей и потрясающей природой!
-                                        </p>
-                                    </div>
-            
-                                    <div class="a-date -offset">
-                                        <span class="a-date__num">06</span>
-                                        <span class="a-date__month">may</span>
-                                    </div>
-                                </a>
-            
-                                <a class="m-activity a-link">
-                                    <div class="m-activity__img">
-                                        <img src="../images/san_diago.jpg" alt="">
-                                    </div>
-            
-                                    <div class="m-activity__text">
-                                        <h4 class="m-activity__title">
-                                            Praktični Mađarski
-                                        </h4>
-            
-                                        <p class="a-desc">
-                                            Akcenat je često na mađarskom jeziku, jer obilazimo 
-                                            autentična mađarska mesta i celokupan program se u uglavnom odvija na ovom jeziku.
-                                        </p>
-                                    </div>
-            
-                                    <div class="a-date -offset">
-                                        <span class="a-date__num">06</span>
-                                        <span class="a-date__month">may</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </section>
                     </div>
                 </div>
 

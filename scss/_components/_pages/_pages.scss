@@ -1,0 +1,21 @@
+.page {
+    &__content {
+        margin-bottom: 50px;
+        padding: 50px 0;
+        background-color: rgba($white, .8);
+    }
+
+    &.-inner {
+        @include bg-img(cover, center);
+        background-image: url(../images/placeholders/laptop.jpg);
+    }
+
+    &.-blog {
+        background-color: $brand-secondary;
+        background-image: none;
+
+        .page__content {
+            background-color: unset;
+        }
+    }
+}

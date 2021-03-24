@@ -18,27 +18,8 @@
         }
     }
 
-    &__img {
-        @include position(absolute, 0, 0, 0, 0);
-
-        display: block;
-        opacity: 0.8;
-        background-image: url(../images/san_diago.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -1;
-
-        &.-classes {
-            background-image: url(../images/placeholders/online.jpg);
-        } 
-
-        &.-blog {
-            background-image: url(../images/placeholders/laptop.jpg);
-        }
-
-        &.-events {
-            background-image: url(../images/placeholders/trip.jpg);
-            background-position-y: 80%;
-        }
+    &.-blog {
+        @include bg-img(cover, center);
+        background-image: url(../images/placeholders/laptop.jpg);
     }
 }

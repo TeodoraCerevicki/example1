@@ -1,31 +1,22 @@
 .m-tab {
     display: flex;
     align-items: center;
-    margin: 0 -30px;
-    border-bottom: 1px solid $brand-primary05;
-    background: $white;
+    border-bottom: 4px solid $brand-secondary;
+    background: $gray-e;
 
     &__item {
-        margin-left: 20px;
         padding: 10px 10px 5px;
         font-size: 15px;
         cursor: pointer;
+        transition: $transition;
 
-        &.-active {
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            background: $brand-primary;
-            color: $white;
-        }
-
-        &:first-child {
-            margin-left: 0;
+        &.-active,
+        &:hover  {
+            background: $brand-secondary;
         }
     }
 
     @media screen and (min-width: 768px) {
-        margin: unset;
-
         &__item {
             padding: 10px 15px;
             font-size: 20px;
