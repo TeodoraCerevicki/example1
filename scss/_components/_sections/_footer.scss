@@ -11,12 +11,17 @@
         color: $white;
         font-size: 22px;
     }
+
+    &__socialList {
+        margin: 0 -10px;
+    }
     
     &__bottomRow {
         background-color: $gray;
         padding: 15px 0;
 
-        .container {
+        .container,
+        a {
             color: $white;
         }    
     }
@@ -26,8 +31,9 @@
         color: $white;
         margin: 0 10px;
 
-        :hover{
+        &:hover{
             color: $brand-secondary;
+            text-decoration: none;
         }
     }
 

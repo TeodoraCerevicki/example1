@@ -15,22 +15,6 @@
       &__inner {
         width: 60%;
       }
-
-      &:before,
-      &:after {
-          content: '';
-          width: 85px;
-          height: 2px;
-          background-color: $brand-primary05;
-          position: absolute;
-          top: 50%;
-          left: -95px;
-      }
-        
-      &:after {
-        left: unset;
-        right: -95px;
-      }
     }
 }
 

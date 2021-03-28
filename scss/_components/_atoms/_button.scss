@@ -16,6 +16,7 @@
     &:hover {
         background: rgba($white, .8);
         color: $brand-primary;
+        text-decoration: none;
     }
 
     &.-formLink {
@@ -34,7 +35,7 @@
 
         &:hover {
             border-color: transparent;
-            background: rgba($brand-secondary, 0.5);
+            background: $brand-secondaryDarken;
             color: $white;
         }
     }

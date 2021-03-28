@@ -5,7 +5,7 @@
     transition: $transition;
 
     &:hover {
-        color: $brand-primary;
+        color: $brand-secondaryDarken;
     }
 
     &.-homeCutText {
@@ -20,12 +20,16 @@
     &.-openLink {
         position: relative;
         display: inline-block;
-        margin: 30px 50px;
+        margin: 25px 50px;
 
         .material-icons {
             @include position(absolute, unset, -10px, -15px, unset);
 
             font-size: 32px;
+        }
+
+        &:hover {
+            text-decoration: none;
         }
     }
 }

@@ -28,7 +28,6 @@
 
     &__img {
         width: auto;
-        height: 155px;
         overflow: hidden;
 
         @media screen and (min-width: 768px) {
@@ -44,19 +43,18 @@
         padding: 20px 10px 0;
     }
     
-    &__title,
-    &__desc {
+    &__title {
         color: $black;
     }
 
     .a-desc {
         @include textLineCut(3);
+
+        font-size: 15px;
     }
 
     @media screen and (min-width: 768px) {
         @include displayFlex(flex, center, space-between, row, nowrap);
-
-        padding-bottom: 40px;
 
         &__text {
             padding: 0 40px;

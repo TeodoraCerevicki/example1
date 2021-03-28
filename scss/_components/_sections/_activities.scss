@@ -9,12 +9,7 @@
     &__item {
         @media screen and (min-width: 768px) {
             margin-top: 90px;
-        }
-        
-    }
-    
-    &__item:first-child {
-        margin-top: 0;
+        } 
     }
     
     &__link::after {
@@ -26,6 +21,23 @@
         z-index: -1;
         height: 100vh;
         background-image: url(../images/placeholders/balloons.jpg);
+    }
+
+    &__emptyState {
+
+        @include bg-img(cover, center);
+        z-index: -1;
+        height: 400px;
+        padding: 20px;
+        background-image: url(../images/placeholders/balloons.jpg);
+
+        p {
+            margin: 100px auto 0;
+
+            @media screen and (min-width: 992px) {
+                width: 50%; 
+            }
+        }
     }
 }
   

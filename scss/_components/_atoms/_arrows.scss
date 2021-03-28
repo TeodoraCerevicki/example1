@@ -1,23 +1,31 @@
 .a-arrow {
-    border: solid $black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
+  border: solid $black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
 
-    .right {
-        transform: rotate(-45deg);
-      }
-      
-      .left {
-        transform: rotate(135deg);
-      }
-      
-      .up {
-        transform: rotate(-135deg);
-      }
-      
-      .down {
-        transform: rotate(45deg);
-      }
+  &.-right {
+      transform: rotate(-45deg);
+  }
+    
+  &.l-eft {
+    transform: rotate(135deg);
+  }
+  
+  &.-up {
+    transform: rotate(-135deg);
+  }
+  
+  &.-down {
+    transform: rotate(45deg);
+  }
+
+  &.-lang {
+    @include position(absolute, 7px, 3px, unset, unset);
+    height: 10px;
+    width: 10px;
+    border-width: 0 2px 2px 0;
+    border-color: $white;
+  } 
 }
 
 .a-toTopArrow {

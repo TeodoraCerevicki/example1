@@ -63,6 +63,37 @@
                 <i class="fa fa-search m-search__icon" aria-hidden="true"></i>
                 <div class="m-search__overlay"></div>
             </div>
+
+            <!-- Language dropdown -->
+            <div class="m-langs">
+                
+                <span class="m-langs__active js-toggleClick" data-target="#lang">
+                    <img src="images/icons/srb.png" alt="serbian flag">
+                    <span class="a-arrow -down -lang"></span>
+                </span>
+    
+                <ul id="lang" class="m-langs__flags js-toggleElement">
+                    <li class="m-langs__flag">
+                        <img src="images/icons/srb.png" alt="serbian flag">
+                        srb
+                    </li>
+    
+                    <li class="m-langs__flag">
+                        <img src="images/icons/hun.png" alt="hungerian flag">
+                        hun
+                    </li>
+    
+                    <li class="m-langs__flag">
+                        <img src="images/icons/rus.png" alt="russian flag">
+                        rus
+                    </li>
+    
+                    <li class="m-langs__flag">
+                        <img src="images/icons/eng.png" alt="uk flag">
+                        eng
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -196,92 +227,100 @@
                 </div>
             </div>
 
-            <section class="s-activities row mobile-layout">
+            <section class="s-activities mobile-layout">
                 <div class="a-title__wrap">
                     <h1 class="a-title">Events</h1>
                 </div>
 
-                <div class="s-activities__item col-md-8 mobile-layout__content">
+                <div class="row hide">
+                    <div class="s-activities__item col-md-8 mobile-layout__content">
 
-                    <a href="./single-event.html" class="m-activity a-link" 
-                        data-aos="fade-right">
-                        <div class="m-activity__img">
-                            <img src="images/san_diago.jpg" alt="">
-                        </div>
+                        <a href="./single-event.html" class="m-activity a-link" 
+                            data-aos="fade-right">
+                            <div class="m-activity__img">
+                                <img src="images/san_diago.jpg" alt="">
+                            </div>
 
-                        <div class="m-activity__text">
-                            <h4 class="m-activity__title">
-                                San Diego
-                            </h4>
+                            <div class="m-activity__text">
+                                <h4 class="m-activity__title">
+                                    San Diego
+                                </h4>
 
-                            <p class="a-desc ">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Officia molestiae reiciendis dignissimos nulla adipisci ipsum error, 
-                   vero optio voluptate labore quibusdam, voluptatem facilis!
-                            </p>
-                        </div>
+                                <p class="a-desc ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Officia molestiae reiciendis dignissimos nulla adipisci ipsum error, 
+                    vero optio voluptate labore quibusdam, voluptatem facilis!
+                                </p>
+                            </div>
 
-                        <div class="a-date -offset">
-                            <span class="a-date__num">06</span>
-                            <span class="a-date__month">may</span>
-                        </div>
-                    </a>
-
-                    <a href="./single-event.html" class="m-activity a-link" data-aos="fade-right">
-                        <div class="m-activity__img">
-                            <img src="images/san_diago.jpg" alt="">
-                        </div>
-
-                        <div class="m-activity__text">
-                            <h4 class="m-activity__title">
-                                San Diego
-                            </h4>
-
-                            <p class="a-desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Officia molestiae reiciendis dignissimos nulla adipisci ipsum error, 
-                   vero optio voluptate labore quibusdam, voluptatem facilis!
-                            </p>
-                        </div>
-
-                        <div class="a-date -offset">
-                            <span class="a-date__num">06</span>
-                            <span class="a-date__month">may</span>
-                        </div>
-                    </a>
-
-                    <a href="./single-event.html" class="m-activity a-link" data-aos="fade-right">
-                        <div class="m-activity__img">
-                            <img src="images/san_diago.jpg" alt="">
-                        </div>
-
-                        <div class="m-activity__text">
-                            <h4 class="m-activity__title">
-                                San Diego
-                            </h4>
-
-                            <p class="a-desc ">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Officia molestiae reiciendis dignissimos nulla adipisci ipsum error, 
-                   vero optio voluptate labore quibusdam, voluptatem facilis!
-                            </p>
-                        </div>
-
-                        <div class="a-date -offset">
-                            <span class="a-date__num">06</span>
-                            <span class="a-date__month">may</span>
-                        </div>
-                    </a>
-
-                    <div class="tar">
-                        <a href="html/events.html" class="a-link -openLink">
-                            Show me more!
-                            <span class="material-icons">trending_flat</span>
+                            <div class="a-date -offset">
+                                <span class="a-date__num">06</span>
+                                <span class="a-date__month">may</span>
+                            </div>
                         </a>
+
+                        <a href="./single-event.html" class="m-activity a-link" data-aos="fade-right">
+                            <div class="m-activity__img">
+                                <img src="images/san_diago.jpg" alt="">
+                            </div>
+
+                            <div class="m-activity__text">
+                                <h4 class="m-activity__title">
+                                    San Diego
+                                </h4>
+
+                                <p class="a-desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Officia molestiae reiciendis dignissimos nulla adipisci ipsum error, 
+                    vero optio voluptate labore quibusdam, voluptatem facilis!
+                                </p>
+                            </div>
+
+                            <div class="a-date -offset">
+                                <span class="a-date__num">06</span>
+                                <span class="a-date__month">may</span>
+                            </div>
+                        </a>
+
+                        <a href="./single-event.html" class="m-activity a-link" data-aos="fade-right">
+                            <div class="m-activity__img">
+                                <img src="images/san_diago.jpg" alt="">
+                            </div>
+
+                            <div class="m-activity__text">
+                                <h4 class="m-activity__title">
+                                    San Diego
+                                </h4>
+
+                                <p class="a-desc ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Officia molestiae reiciendis dignissimos nulla adipisci ipsum error, 
+                    vero optio voluptate labore quibusdam, voluptatem facilis!
+                                </p>
+                            </div>
+
+                            <div class="a-date -offset">
+                                <span class="a-date__num">06</span>
+                                <span class="a-date__month">may</span>
+                            </div>
+                        </a>
+
+                        <div class="tar">
+                            <a href="html/events.html" class="a-link -openLink">
+                                Show me more!
+                                <span class="material-icons">trending_flat</span>
+                            </a>
+                        </div>
                     </div>
+
+                    <div class="col-md-4 s-activities__bgImg"></div>
                 </div>
 
-                <div class="col-md-4 s-activities__bgImg"></div>
+                <div class="s-activities__emptyState row">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sit voluptatem autem corrupti qui aut error adipisci, ipsum veniam sed dicta expedita possimus temporibus nihil deleniti ipsa maxime nostrum reiciendis?
+                    </p>
+                </div>
             </section>
 
             <section class="s-homeBlog row">
@@ -378,9 +417,9 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="footer__socialList">
                             <a href="" class="footer__icon">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
                             </a>
             
                             <a href="" class="footer__icon">
@@ -389,6 +428,10 @@
             
                             <a href="" class="footer__icon">
                                 <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="" class="footer__icon">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                             </a>
                         </li>
                     </ul>
@@ -478,6 +521,7 @@
 
             <div class="m-popup__box">
                 <div class="a-closeIcon js-close"></div>
+                <a href='https://www.pexels.com/photo/flat-lay-of-clothing-and-accessories-3927390/' class="d-block a-link">Photo by cottonbro from Pexels</a>
                 <a href='https://www.pexels.com/photo/green-leaf-plant-beside-brown-electric-guitar-on-sofa-892617/' class="d-block a-link">Photo by Daria Shevtsova from Pexels</a>
                 <a href='https://www.pexels.com/photo/eyeglasses-on-book-beside-macbook-3551711/' class="d-block a-link">Photo by Fallon Michael from Pexels</a>
                 <a href='https://www.pexels.com/photo/top-view-photo-of-people-writing-on-notebook-1557251/' class="d-block a-link">Photo by Isaac Taylor from Pexels</a>

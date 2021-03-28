@@ -18,6 +18,10 @@
         text-transform: uppercase;
     }
 
+    &:hover {
+        text-decoration: none;
+    }
+
     &:nth-child(2) {
         background-color: rgba($blue, .9);
     }
@@ -38,6 +42,7 @@
 .m-card__wrap {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 
     &.-home {
 
@@ -163,13 +168,22 @@
             }
 
             &__info {
-                background: $white;
                 width: 90%;
                 margin: 0 auto;
+                padding-bottom: 10px;
+                background: $white;
+            }
+
+            &__title {
+                font-family: 'handwritten';
+                font-size: 20px;
+                font-weight: 500;
+                text-transform: unset;
             }
 
             .a-desc {
                 @include textLineCut(3);
+                font-size: 15px;
             }
 
             &:hover {

@@ -10,11 +10,10 @@ $(document).ready(function () {
     $(function(){
         $('.js-toggleClick').click(function(e) {
             e.preventDefault();
-    
             var target = $(this).attr('data-target');
-            var infoBox = $(this).closest('.m-card__info')
+            var toggleElement = $(this).closest('.js-toggleElement');
             $(target).slideToggle();
-            $(infoBox).toggleClass('-open')
+            $(toggleElement).toggleClass('-open');
         });
     });
 
