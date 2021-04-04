@@ -1,9 +1,10 @@
 .m-langs {
-    @media screen and (max-width: 991px) {
-        @include position(absolute, 0, 4px, unset, unset);
-    }
+    // @media screen and (max-width: 991px) {
+    //     @include position(absolute, 0, 4px, unset, unset);
+    // }
 
     position: relative;
+    display: inline-block;
     margin-left: 15px;
     padding-right: 22px;
     cursor: pointer;
