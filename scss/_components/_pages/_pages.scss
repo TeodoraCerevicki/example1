@@ -26,6 +26,10 @@
             background-color: unset;
         }
     }
+
+    &.-singleEvent {
+        background-image: url(../images/placeholders/event.jpg);
+    }
 }
 
 .p-post {

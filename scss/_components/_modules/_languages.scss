@@ -1,4 +1,8 @@
 .m-langs {
+    @media screen and (max-width: 991px) {
+        @include position(absolute, 0, 4px, unset, unset);
+    }
+
     position: relative;
     margin-left: 15px;
     padding-right: 22px;
@@ -9,11 +13,16 @@
     }
 
     &__flags {
-        @include position(absolute, 38px, unset, unset, -13px);
+        @include position(absolute, 38px, 0, unset, unset);
         @include bgcolorOpacity($black, .7);
         display: none;
         padding: 5px 10px;
         width: 100px;
+
+        @media screen and (min-width: 992px) {
+            left: -13px;
+            right: unset;
+        }
     }
 
     &__flag {
