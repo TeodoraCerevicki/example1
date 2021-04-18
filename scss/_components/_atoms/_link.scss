@@ -32,4 +32,8 @@
             text-decoration: none;
         }
     }
+
+    &.-secondary {
+        color: $brand-secondaryBtn;
+    }
 }

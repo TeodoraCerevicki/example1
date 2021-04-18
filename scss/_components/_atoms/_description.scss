@@ -1,7 +1,11 @@
 .a-desc {
     margin-top: 15px;
     font-size: 17px;
-    line-height: 1.5;
+    line-height: 1.7;
+
+    &::selection {
+        background: $brand-secondary;
+    }
 
     &.-homeCutText {
         @include textLineCut(8);

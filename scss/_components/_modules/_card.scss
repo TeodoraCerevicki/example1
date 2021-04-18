@@ -37,6 +37,53 @@
     @media screen and (min-width: 768px) {
         margin: 0 15px;
     }
+
+    &.-errorPage {
+
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+        padding: 0;
+        height: auto;
+        background: none;
+        box-shadow: none;
+
+        p {
+            @include position(absolute, 50%, unset, unset, 50%);
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: 250px;
+            font-size: 20px;
+            font-weight: 600;
+            color: $white;
+        }
+
+        i {
+            font-size: 250px;
+
+            &.-srb {
+                color: $brand-primary;
+            }
+
+            &.-eng {
+                color: rgba($blue, .9);
+            }
+
+            &.-rus {
+                color: rgba($gray, .7);
+            }
+
+            &.-hun {
+                color: rgba($red, .5);
+            }
+        }
+
+        &:nth-child(even) {
+            i {
+                transform: scaleX(-1);
+            }
+        }
+    }
 }
 
 .m-card__wrap {

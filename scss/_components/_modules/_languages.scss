@@ -1,13 +1,15 @@
 .m-langs {
-    // @media screen and (max-width: 991px) {
-    //     @include position(absolute, 0, 4px, unset, unset);
-    // }
-
-    position: relative;
+    @include position(absolute, -40px, 70px, unset, unset);
     display: inline-block;
     margin-left: 15px;
     padding-right: 22px;
     cursor: pointer;
+
+    @media screen and (min-width: 992px) {
+        position: relative;
+        top: unset;
+        right: unset;
+    }
 
     img {
         width: 25px;
