@@ -27,10 +27,6 @@
         }
     }
 
-    &.-singleEvent {
-        background-image: url(../images/placeholders/event.jpg);
-    }
-
     &.page404 {
         background-color: $brand-secondary;
 
@@ -89,4 +85,130 @@
     .m-block {
         margin-top: 0;
     }
+}
+
+.error404 {
+    background-color: $brand-secondary;
+
+    .page__content {
+        background-color: $brand-secondary;
+
+        a {
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+    .page404__img {
+        display: block;
+        margin: 35px auto;
+
+        @media screen and (min-width: 992px) {
+            @include position(absolute, 33%, unset, unset, 50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.singleEvent {
+    &::before {
+        @include position(fixed, 0, 0, 0, 0);
+        @include bg-img(cover, center);
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/placeholders/event.jpg);
+    }
+
+    .page__content {
+       padding: 0 0 9px;
+    }
+
+    .entry-meta,
+    .cat-links {
+        display: none;
+    }
+}
+
+.search-page {
+    margin-top: -32px;
+    padding: 100px 50px 50px;
+    background-color: $brand-secondary;
+
+    .page-title {
+        font-size: 30px;
+        color: $gray;
+    }
+
+    .post {
+        @include displayFlex(flex, center, flex-end, column);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        width: 90%;
+        max-width: 350px;
+        height: 400px;
+        margin-top: 30px;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: $outer;
+
+        .entry-header,
+        .entry-footer {
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px;
+            background: $white;
+        }
+
+        .entry-footer {
+            padding: 0 10px 10px;
+        }
+
+        .entry-title {
+            font-size: 21px;
+
+            a {
+                &:hover {
+                    color: $gray;
+                }
+            }
+        }
+
+        .entry-meta {
+            padding-top: 5px; 
+        }
+
+        .comments-link {
+            display: none;
+        }
+
+        .edit-link {
+            display: block;
+        }
+
+        .post-thumbnail {
+            @include position(absolute, 0, unset, 0, unset);
+            z-index: -1; 
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.page-cover {
+    @include position(fixed, 0, 0, 0, 0);
+    @include bg-img(cover, center);
+    z-index: 0;
+}
+
+.s-header,
+.main-content,
+.footer {
+    position: relative;
+    z-index: 1;
 }

@@ -1,0 +1,30 @@
+.m-textBlock {
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 35px;
+    }
+
+    p {
+        margin-top: 15px;
+        font-size: 17px;
+        line-height: 1.7;
+
+        &::selection {
+            background: $brand-secondary;
+        }
+    }
+
+    ul,
+    ol {
+        padding-left: 35px;
+
+        li {
+            color: $orange;
+        }
+    }
+
+    ul {
+        li {
+            list-style: disc;
+        }
+    }
+}

@@ -50,7 +50,7 @@
             }
         }
 
-        .a-link {
+        a {
             color: inherit;
 
             &:hover {
@@ -58,7 +58,7 @@
             }
         }
 
-        .-active {
+        .current_page_item{
             background-color: $brand-primary;
             color: $black;
 

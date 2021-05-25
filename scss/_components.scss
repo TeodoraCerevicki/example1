@@ -26,7 +26,9 @@
 @import '_components/_modules/breadcrumb';
 @import '_components/_modules/mobile-layout';
 @import '_components/_modules/languages';
-@import '_components/_modules//gallery';
+@import '_components/_modules/gallery';
+@import '_components/_modules/text-block';
+
 
 // Sections
 @import '_components/_sections/home';
@@ -40,3 +42,12 @@
 
 // Pages
 @import '_components/_pages/pages';
+
+
+#wpadminbar {
+    display: none;
+}
+
+.site-info {
+    display: none;
+}

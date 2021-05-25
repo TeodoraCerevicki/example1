@@ -64,7 +64,35 @@ input[type=email] {
         border-color: $white;
     }
 
+    .search-form {
+        position: relative;
+        z-index: 1;
+    }
+
+    .search-field {
+        width: 75%;
+        padding-left: 5px;
+        border: none;
+        background: transparent;
+        color: $white;
+        border-bottom: 2px solid $white;
+
+        &::placeholder {
+            color: $white;
+        }
+    }
+
+    .search-submit{
+        @include displayFlex(inline-flex, center,center);
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: transparent;
+        color: transparent;
+    }
+
     &__icon {
+        @include position(absolute, 0, 20px, unset, unset);
         @include displayFlex(inline-flex, center,center);
         width: 30px;
         height: 30px;
