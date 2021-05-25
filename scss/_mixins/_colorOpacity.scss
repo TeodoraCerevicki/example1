@@ -8,3 +8,12 @@
     background-color: rgba($color, $opacity);
 }
 // @include bgcolorOpacity($black, .5);
+
+@mixin overlay($color, $opacity) {
+    @include position(absolute, 0, 0, 0, 0);
+
+    background-color: rgba($color, $opacity);
+    z-index: 0;
+}
+
+// @include overlay($black, .5);

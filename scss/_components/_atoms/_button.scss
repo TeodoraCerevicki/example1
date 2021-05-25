@@ -29,6 +29,10 @@
         padding: 10px 20px;
     }
 
+    &.-inline-block {
+        display: inline-block;
+    }
+
     &.-secondary {
         border-color: $brand-secondaryBtn;
         background: $brand-secondaryBtn;

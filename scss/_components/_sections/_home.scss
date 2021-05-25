@@ -1,4 +1,4 @@
-.s-intro {
+.s-2Layer {
 
     & > div {
         height: 100vh;
@@ -11,7 +11,7 @@
     }
 }
 
-.s-introCards {
+.s-2LayerCards {
     @include displayFlex(flex, center, center);
     @include bg-img(cover, top center);
     height: 100vh;
