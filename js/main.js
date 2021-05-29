@@ -110,19 +110,26 @@ $(document).ready(function () {
     });
 
     // Icon appears 
-    $(document).scroll(function() {
-        var y = window.scrollY;
-        var icon = $('.a-toTopArrow');
+    // $(document).scroll(function() {
+    //     var y = window.scrollY;
+    //     var icon = $('.a-toTopArrow');
 
-        (y > 795 ) ? icon.fadeIn() : icon.fadeOut();
-    });
+    //     (y > 795 ) ? icon.fadeIn() : icon.fadeOut();
+    // });
 
     // Scroll to the top
     $('.a-toTopArrow').click(function() {
         $('body,html').animate({
-            scrollTop : 0                   
+            scrollTop : 0              
         }, 500);
     });
+
+    $('.a-scrollTo').on('click', function(e){
+		$('html,body').animate({
+			scrollTop: $(this).offset().top + 70
+		},500);
+		e.preventDefault();
+	});
 
     AOS.init({disable: 'mobile'});
 });

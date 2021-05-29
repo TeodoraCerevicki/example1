@@ -61,13 +61,13 @@
     .a-link {
         width: 160px;
         margin: 20px 0 0 auto;
-        border: 1px solid $orange;
-        background-color: $orange;
+        border: 1px solid $brand-primary;
+        background-color: $brand-primary;
         transition: $transition;
 
         &:hover {
             background-color: $white;
-            color: $orange;
+            color: $brand-primary;
         }
     }
 }

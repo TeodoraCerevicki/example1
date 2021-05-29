@@ -18,11 +18,31 @@
     background-image: url(../images/placeholders/book.jpg);
 }
 
-.s-homeBlog {
-    padding: 40px 0;
-    background-color: $brand-secondary;
+.s-about,
+.s-homeBlog,
+.s-activities,
+.s-blogTestimonial {
+    position: relative;
 
     @media screen and (min-width: 1140px) {
         height: 100vh; 
     }
+}
+
+.s-homeBlog,
+.s-activities {
+    padding: 50px 0;
+}
+
+.s-homeBlog,
+.s-activities {
+    background-color: $brand-secondary;
+}
+.s-blogTestimonial {
+    @include bg-img(cover, center);
+    padding: 50px;
+}
+
+.header {
+    position: relative;
 }
