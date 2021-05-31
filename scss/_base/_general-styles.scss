@@ -46,3 +46,9 @@ a {
 .c-pointer {
     cursor: pointer;
 }
+
+
+[class^="col"] {
+    position: relative;
+    z-index: 1;
+}

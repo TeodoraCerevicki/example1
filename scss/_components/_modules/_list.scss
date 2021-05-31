@@ -1,0 +1,9 @@
+.m-list {
+    &.bullet {
+        padding-left: 30px;
+        
+        li {
+            list-style: disc;
+        }
+    }
+}

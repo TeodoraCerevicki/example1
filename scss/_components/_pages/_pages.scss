@@ -5,9 +5,10 @@
         background-color: rgba($white, .8);
     }
 
-    &.-inner {
+    &__bgImg {
         @include bg-img(cover, center);
-        background-image: url(../images/placeholders/laptop.jpg);
+        @include position(fixed, 0, 0, 0, 0);
+        background-image: url(../images/placeholders/laptop.jpeg);
     }
 
     &.-about {
