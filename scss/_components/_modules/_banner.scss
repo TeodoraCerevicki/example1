@@ -1,1 +1,14 @@
-.m-banner {}
+.m-banner {
+
+    &.active-serbian {
+        @include bg-img(cover, center);
+
+        padding: 50px;
+        background-image: url(../images/placeholders/cool-background.png);
+
+        .m-banner__title {
+            font-size: 35px;
+            color: $brand-primary;
+        }
+    }
+}
