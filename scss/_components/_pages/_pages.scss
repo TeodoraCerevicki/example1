@@ -21,6 +21,15 @@
     }
 
     &-active-serbian {
+        .benefits {
+            width: 70%;
+            height: 50vh;
+            margin-left: auto;
+            margin-right: 0;
+            padding: 20px 30px;
+            background-color: $white;
+        }
+
         .price {
             padding: 50px;
             background-color: $white;
