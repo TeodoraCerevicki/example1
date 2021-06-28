@@ -1,5 +1,9 @@
 .m-banner {
 
+    .m-banner__title {
+        font-size: 35px;
+    }
+
     &.active-serbian {
         @include bg-img(cover, center);
 
@@ -7,8 +11,25 @@
         background-image: url(../images/placeholders/cool-background.png);
 
         .m-banner__title {
-            font-size: 35px;
             color: $brand-primary;
         }
+    }
+
+    &.support {
+        padding: 50px;
+        background-color: $brand-primary;
+
+        .m-banner__title {
+            padding-left: 100px;
+
+            &::before {
+                content: "+";
+                font-size: 150px;
+                color: $white;
+                position: absolute;
+                top: -125px;
+                left: 0;            
+            }
+        } 
     }
 }

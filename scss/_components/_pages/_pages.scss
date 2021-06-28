@@ -7,8 +7,10 @@
 
     &__bgImg {
         @include bg-img(cover, center);
-        @include position(fixed, 0, 0, 0, 0);
-        background-image: url(../images/placeholders/laptop.jpeg);
+        background-image: url(../images/placeholders/4.jpg);
+
+        margin-top: -250px;
+        padding-top: 250px;
     }
 
     &.-about {
@@ -22,17 +24,18 @@
 
     &-active-serbian {
         .benefits {
-            width: 70%;
             height: 50vh;
+            display: flex;
+            align-items: center;
             margin-left: auto;
             margin-right: 0;
             padding: 20px 30px;
-            background-color: $white;
+            background-color: rgba($white, .8);
         }
 
         .price {
             padding: 50px;
-            background-color: $white;
+            background-color: rgba($white, .8);
 
             &__price {
                 display: block;
