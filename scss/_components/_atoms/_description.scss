@@ -14,4 +14,12 @@
             -webkit-line-clamp: unset;
         }
     }
+
+    &.-mobile {
+        @media (max-width: 767px) {
+            margin: 0 -10px;
+            padding: 10px;
+            background-color: rgba($white, .5);
+        }
+    }
 }

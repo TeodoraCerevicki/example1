@@ -40,7 +40,11 @@
 }
 .s-blogTestimonial {
     @include bg-img(cover, center);
-    padding: 50px;
+    padding: 50px 20px;
+
+    @media (min-width: 768px) {
+        padding: 50px;
+    }
 }
 
 .header {

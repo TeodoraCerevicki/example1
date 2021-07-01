@@ -7,7 +7,7 @@
     &.active-serbian {
         @include bg-img(cover, center);
 
-        padding: 50px;
+        padding: 50px 20px;
         background-image: url(../images/placeholders/cool-background.png);
 
         .m-banner__title {
@@ -16,12 +16,14 @@
     }
 
     &.support {
-        padding: 50px;
+        padding: 50px 20px;
         background-color: $brand-primary;
 
         .m-banner__title {
-            padding-left: 100px;
-
+            @media (min-width: 768px) {
+                padding-left: 100px;
+            }
+            
             &::before {
                 content: "+";
                 font-size: 150px;

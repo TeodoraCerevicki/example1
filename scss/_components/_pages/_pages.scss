@@ -13,6 +13,14 @@
         padding-top: 250px;
     }
 
+    .bgImg {
+        @include position(fixed, 0, 0, 0, 0);
+        @include bg-img(cover, center);
+        z-index: -1;
+        margin-top: -250px;
+        padding-top: 250px;
+    }
+
     &.-about {
         @include bg-img(cover, center);
         background-image: url(../images/placeholders/room.jpg);
@@ -23,18 +31,25 @@
     }
 
     &-active-serbian {
+        .bgImg {
+            background-image: url(../images/placeholders/laptop.jpeg);
+        }
+
         .benefits {
-            height: 50vh;
             display: flex;
             align-items: center;
             margin-left: auto;
             margin-right: 0;
             padding: 20px 30px;
             background-color: rgba($white, .8);
+
+            @media (min-width: 768px) {
+                height: 50vh;
+            }
         }
 
         .price {
-            padding: 50px;
+            padding: 20px 30px;
             background-color: rgba($white, .8);
 
             &__price {
@@ -233,8 +248,11 @@
 }
 
 .s-header,
-.main-content,
 .footer {
     position: relative;
     z-index: 1;
+}
+
+.main-content {
+    position: relative;
 }
