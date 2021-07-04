@@ -1,20 +1,30 @@
 .m-prosAndCons {
     position: relative;
 
-    &:before,
-    &:after {
-        @include position(absolute, 0, unset, 0, unset);
-        content: '';
-        width: 50%;
-    }
-
-    &::before {
-        left: 0;
+    .m-prosAndCons__pros {
         background-color: $brand-secondary;
     }
 
-    &::after {
-        right: 0;
+    .m-prosAndCons__cons {
         background-color: $red-light;
+    }
+
+    @media (min-width: 992px) {
+        &:before,
+        &:after {
+            @include position(absolute, 0, unset, 0, unset);
+            content: '';
+            width: 50%;
+        }
+
+        &::before {
+            left: 0;
+            background-color: $brand-secondary;
+        }
+
+        &::after {
+            right: 0;
+            background-color: $red-light;
+        }
     }
 }

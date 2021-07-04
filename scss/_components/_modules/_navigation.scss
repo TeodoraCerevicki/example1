@@ -32,7 +32,8 @@
     &__list {
         display: flex;
 
-        li {
+        a {
+            display: block;
             width: 100%;
             border-bottom: 1px solid $white;
             padding: 10px 20px;
@@ -42,20 +43,12 @@
             &:hover {
                 background-color: $brand-primary;
                 color: $black;
+                text-decoration: none;
             }
 
             @media screen and (min-width: 992px) {
                 width: unset;
                 border: none;
-            }
-        }
-
-        a {
-            color: inherit;
-
-            &:hover {
-                text-decoration: none;
-                color: inherit;
             }
         }
 

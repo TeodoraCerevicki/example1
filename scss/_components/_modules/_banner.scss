@@ -7,11 +7,15 @@
     &.active-serbian {
         @include bg-img(cover, center);
 
-        padding: 50px 20px;
+        padding: 50px 0;
         background-image: url(../images/placeholders/cool-background.png);
 
         .m-banner__title {
             color: $brand-primary;
+        }
+
+        @media (min-width: 768px) {
+            padding: 50px 20px;
         }
     }
 
@@ -29,7 +33,7 @@
                 font-size: 150px;
                 color: $white;
                 position: absolute;
-                top: -125px;
+                top: -133px;
                 left: 0;            
             }
         } 

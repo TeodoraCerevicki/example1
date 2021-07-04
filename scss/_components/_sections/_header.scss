@@ -2,12 +2,11 @@
     position: relative;
 
     &.-inner {
-        @include displayFlex(flex, center, center);
         padding: 70px 7px 20px;
 
         @media screen and (min-width: 768px) {
             min-height: 250px;
-            padding: 40px 0;
+            padding: 90px 0 20px;
 
             .a-title {
                 color: $black-2;
@@ -19,8 +18,7 @@
     }
 
     &.-blog {
-        @include bg-img(cover, center);
-        background-image: url(../images/placeholders/laptop.jpg);
+        background-color: $white;
     }
 
     &.-post {
